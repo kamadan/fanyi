@@ -2,8 +2,8 @@ Hi,
 
 Ever since your December 14, 2019 update for Guildwars ONE, certain text-language and interface-size combinations will cause the game to crash. I was able to consistently reproduce the following:
 
-1) First, select Menu -> Options (or simply engage the F11 key) -> General tab -> Text Language: Select "Chinese"
-2) Second, select Menu -> Options (or simply engage the F11 key) -> Graphics tab -> Interface Size: Select "Large", or "Larger"
+1) First, go to Settings Menu -> Options (or simply engage the F11 key) -> General tab -> Text Language: Select "Chinese"
+2) Second, go to Settings Menu -> Options (or simply engage the F11 key) -> Graphics tab -> Interface Size: Select "Large", or "Larger"
 
 This combination will cause the game to crash. I've not tested other combos as each crash is costly and would sometimes involve the replacement of .dat files to fix.
 
