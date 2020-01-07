@@ -752,8 +752,8 @@ Local $ConversionTable[908][2] = [ _
 ["Toggle...", "Toggle..."], _ ;未译
 ["ToggleID", "ToggleID"], _ ;未译
 ["Tomb of the Primeval Kings", "先王之墓"], _
-["Toolbox normally loads settings on launch.\nClick to re-load from disk now.", "Toolbox normally loads settings on launch.\n点击以即可重装."], _ ;未译 ;候选词： 缺 ('重装' 欠佳)
-["Toolbox normally saves settings on exit.\nClick to save to disk now.", "Toolbox normally saves settings on exit.\n点击以即刻存档."], _ ;未译
+["Toolbox normally loads settings on launch.\nClick to re-load from disk now.", "助手通常会在启动时就自动装载设置文件.\n点击以即刻手动重装."], _ ;未译 ;候选词： 缺 ('重装' 欠佳)
+["Toolbox normally saves settings on exit.\nClick to save to disk now.", "助手通常会在关闭时对现有设置自动存档.\n点击以即刻手动存档."], _ ;未译
 ["Toolbox will disable a pcon if it is not found in the inventory", "如某补品从包内?失寻, 助手会关闭该补品的自动服用功能"], _ ;未译
 ["Toolbox", "Toolbox"], _ ;未译
 ["Tower of Strength", "力量之塔"], _
