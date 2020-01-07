@@ -90,8 +90,8 @@ Local $ConversionTable[908][2] = [ _
 ["And this is where I met the Lich. He told me to burn things.", "And this is where I met the Lich. He told me to burn things."], _ ;未译
 ["Anton", "安托"], _
 ["Arborstone", "亭石"], _
-["Are you sure?\nThis operation cannot be undone.\n\n", "Are you sure?\nThis operation cannot be undone.\n\n"], _ ;未译
-["Are you sure?\nThis operation cannot be undone\n\n", "Are you sure?\nThis operation cannot be undone\n\n"], _ ;未译
+["Are you sure?\nThis operation cannot be undone.\n\n", "确定乎?\n该操作不可逆转.\n\n"], _ 
+["Are you sure?\nThis operation cannot be undone\n\n", "确定乎?\n该操作不可逆转\n\n"], _ 
 ["Are you the Keymaster?", "Are you the Keymaster?"], _ ;未译
 ["Armor of Salvation", "救赎防具"], _ 
 ["Armor of Salvation\nIron and Bones", "救赎防具\n铁矿石 及 骨头"], _
@@ -107,7 +107,7 @@ Local $ConversionTable[908][2] = [ _
 ["Augury Rock", "占卜之石"], _
 ["Aurios Mines, The", "奥里欧斯矿坑"], _
 ["Aurora Glade", "欧若拉林地"], _
-["Automatically manage gold", "Automatically manage gold"], _ ;未译
+["Automatically manage gold", "自动保管白金"], _ ;候选词：不知manage具体功能为何
 ["BE GONE!", "BE GONE!"], _ ;未译
 ["Bad hero index '%d' for build '%s'", "Bad hero index '%d' for build '%s'"], _ ;未译
 ["Bai Paasu Reach", "拜巴苏区域"], _
@@ -144,17 +144,17 @@ Local $ConversionTable[908][2] = [ _
 ["Buy##pstone", "买##pstone"], _ ;候选词： 购买
 ["Buy##rare", "买##rare"], _ ;候选词： 购买
 ["Buy##resscroll", "买##resscroll"], _ ;候选词： 购买
-["CTRL+Click or Double Click on a slider or drag box to input text.", "CTRL+Click or Double Click on a slider or drag box to input text."], _ ;未译
-["CTRL+Mouse Wheel to zoom window contents.", "CTRL+Mouse Wheel to zoom window contents."], _ ;未译
+["CTRL+Click or Double Click on a slider or drag box to input text.", "输入字条： 在滑尺上 CTRL+单击 或 双击，或 直接拉动框格."], _ ;候选词： 框格或该成为窗口？栏框
+["CTRL+Mouse Wheel to zoom window contents.", "放大框格内容： CTRL+鼠标滑轮."], _ ;候选词： 框格或该成为窗口？
 ["Camp Hojanu", "何加努营地"], _
 ["Camp Rankor", "蓝口营地"], _
-["Cancel the current queue of operations", "Cancel the current queue of operations"], _ ;未译
+["Cancel the current queue of operations", "取消现有或正待命的操作"], _ 
 ["Cancel", "取消"], _ 
 ["Cancelled", "已取消"], _ 
 ["Candy Apple", "糖苹果"], _ 
 ["Candy Corn", "粟米糖"], _ 
 ["Cannot find %s", "%s 失寻"], _ 
-["Cannot find %s, please refill or disable", "%s 失寻, please refill or disable"], _ ;未译
+["Cannot find %s, please refill or disable", "%s 失寻, 可对角色进行补给 或 关闭功能"], _ ;候选词：
 ["Cavalon", "卡瓦隆"], _
 ["Central Transfer Chamber", "中央转送室"], _
 ["Chahbek Village", "夏贝克村庄"], _
@@ -172,8 +172,8 @@ Local $ConversionTable[908][2] = [ _
 ["City speedboost", "城内加速品"], _ 
 ["City", "City"], _ ;未译
 ["Clear", "Clear"], _ ;未译
-["Click and drag on any empty space to move a window.", "Click and drag on any empty space to move a window."], _ ;未译
-["Click and drag on the lower right corner to resize a window.", "Click and drag on the lower right corner to resize a window."], _ ;未译
+["Click and drag on any empty space to move a window.", "移动框格： 点住框格内何空白位置，再随心拉动."], _ ;候选词： 框格或该成为窗口？
+["Click and drag on the lower right corner to resize a window.", "改变框格大小： 点住框格右下角，再随心拉动."], _ ;候选词： 框格或该成为窗口？
 ["Click to change hotkey", "击此以重配快键"], _ 
 ["Click to load builds to heroes and player", "击此以替英雄及角色装填技能样本"], _ 
 ["Click to reconnect", "击此以重新连网"], _ 
@@ -182,7 +182,7 @@ Local $ConversionTable[908][2] = [ _
 ["Clicker", "Clicker"], _ ;未译
 ["Clock", "Clock"], _ ;未译
 ["Close on travel", "Close on travel"], _ ;未译
-["Close other windows when opening a new one", "Close other windows when opening a new one"], _ ;未译
+["Close other windows when opening a new one", "打开新框格时关掉其他框格"], _ ;候选词： 框格或该成为窗口？
 ["Close this window", "关闭此窗口"], _ 
 ["Close", "关闭"], _ 
 ["Codex Arena", "Codex 竞技场"], _
@@ -194,7 +194,7 @@ Local $ConversionTable[908][2] = [ _
 ["Connecting...", "正在连接..."], _ 
 ["Consulate Docks", "领事馆码头"], _
 ["Copperhammer Mines", "铜锤矿坑"], _
-["Couldn't connect to the host '%s'", "Couldn't connect to the host '%s'"], _ ;未译
+["Couldn't connect to the host '%s'", "无法连接主管站点 '%s'"], _ 
 ["Craft fow armor", "(灾难内)打造黑曜石盔甲"], _ ;候选词： 锻造
 ["Create Hotkey", "添加快键"], _ 
 ["Create Hotkey...", "添加快键..."], _ ;候选词： 指定快键
@@ -232,9 +232,9 @@ Local $ConversionTable[908][2] = [ _
 ["Diamond", "金刚石"], _
 ["Disable when not found", "失寻时关闭"], _ 
 ["Disabled###pconstoggle", "已关闭###pconstoggle"], _ 
-["Displays the distance to your target.\n1010 = Earshot / Aggro\n1248 = Cast range\n2500 = Spirit range\n5000 = Radar range", "Displays the distance to your target.\n1010 = Earshot / Aggro\n1248 = Cast range\n2500 = Spirit range\n5000 = Radar range"], _ ;未译
-["Displays the health of the target.\nMax health is only computed and refreshed when you directly damage or heal your target", "Displays the health of the target.\nMax health is only computed and refreshed when you directly damage or heal your target"], _ ;未译
-["Displays the system time (hour : minutes)", "Displays the system time (hour : minutes)"], _ ;未译
+["Displays the distance to your target.\n1010 = Earshot / Aggro\n1248 = Cast range\n2500 = Spirit range\n5000 = Radar range", "展示目标距离.\n1010 = 听距 / 触发圈半径\n1248 = 施法范围\n2500 = 灵距\n5000 = 雷达范围"], _ ;候选词：展现
+["Displays the health of the target.\nMax health is only computed and refreshed when you directly damage or heal your target", "展示目标体力.\n在角色直接进攻或治疗目标时，助手才会重新计算并刷新目标的体力上限"], _ 
+["Displays the system time (hour : minutes)", "展示计算机本地时间 (小时 : 分钟)"], _ 
 ["Distance", "距离"], _ 
 ["Divinity Coast", "神圣海岸"], _
 ["Do you like my fish balloon? Can you hear it singing to you...?", "Do you like my fish balloon? Can you hear it singing to you...?"], _ ;未译
@@ -250,7 +250,7 @@ Local $ConversionTable[908][2] = [ _
 ["Docks -> LA Gate @ Mhenlo", "领事馆码头 -> 狮门 @ 涵洛"], _ 
 ["Don't change", "Don't change"], _ ;未译
 ["Doomlore Shrine", "末日传说神殿"], _
-["Double-click on the title bar to collapse a window.", "Double-click on the title bar to collapse a window."], _ ;未译
+["Double-click on the title bar to collapse a window.", "折闭窗口： 双击标题栏."], _ ;候选词：框格，窗口?
 ["Down", "Down"], _ ;未译
 ["Dragon's Lair, The", "龙穴"], _
 ["Dragon's Throat", "龙喉"], _
@@ -276,7 +276,7 @@ Local $ConversionTable[908][2] = [ _
 ["Enable/Disable button", "启动/关闭 按钮"], _ 
 ["Enabled###pconstoggle", "已启动###pconstoggle"], _ 
 ["Enabled-Background", "Enabled-Background"], _ ;未译
-["Enabling or disabling pcons will also Tick or Untick in party list", "Enabling or disabling pcons will also Tick or Untick in party list"], _ ;未译
+["Enabling or disabling pcons will also Tick or Untick in party list", "启动或关闭补品功能之际，助手会改变角色在成员表上的就绪状态"], _ 
 ["Enemy count", "(敌)个数统计"], _ ;候选词： 敌人总数，敌总数，敌数?统计
 ["Enter Challenge", "进入挑战任务"], _ 
 ["Enter DoA, FoW, or UW to begin", "启动前提： 角色已入悲难之门(四门)，灾难裂痕，或地下世界."], _ 
@@ -292,7 +292,7 @@ Local $ConversionTable[908][2] = [ _
 ["Europe Polish", "欧洲 波兰语"], _ 
 ["Europe Russian", "欧洲 俄罗斯语"], _ 
 ["Europe Spanish", "欧洲 西班牙语"], _ 
-["Execute a single task such as opening chests\nor reapplying lightbringer title", "Execute a single task such as opening chests\nor reapplying lightbringer title"], _ ;未译
+["Execute a single task such as opening chests\nor reapplying lightbringer title", "执行一项操作，例： 开箱\n或重新展示光明头衔"], _ 
 ["Execute the hotkey now", "即刻触发快键"], _ ;候选词： 激活，动用
 ["Execute...", "执行..."], _ ;候选词： ?
 ["Explorable", "探索区域"], _ 
@@ -419,7 +419,7 @@ Local $ConversionTable[908][2] = [ _
 ["Jennur's Horde", "征钠群落"], _
 ["Jokanur Diggings", "卓坎诺挖掘点"], _
 ["Jora", "乔拉"], _
-["Just used the last %s", "Just used the last %s"], _ ;未译
+["Just used the last %s", "刚耗尽 %s"], _ ;候选词：已耗尽
 ["Kahmu", "卡慕"], _
 ["Kaineng Center", "凯宁中心"], _
 ["Kama -> Docks @ Hahnna", "卡玛丹 -> 领事馆码头 @ Hahnna"], _ ;未译
@@ -454,7 +454,7 @@ Local $ConversionTable[908][2] = [ _
 ["Loading\0\0\0", "正在读图\0\0\0"], _ ;候选词： 正在装载
 ["LoginNumber", "LoginNumber"], _ ;未译
 ["Longeye's Ledge", "长眼岩脉"], _
-["Low on %s, please refill or disable", "%s 即将耗尽, please refill or disable"], _ ;未译
+["Low on %s, please refill or disable", "%s 即将耗尽,  可对角色进行补给 或 关闭功能"], _ ;候选词：
 ["Lump of Charcoal", "结块的木炭"], _
 ["Lunar Fortunes", "命运锦囊"], _ 
 ["Lunars and Alcohol", "Lunars and Alcohol"], _ ;未译
@@ -500,7 +500,7 @@ Local $ConversionTable[908][2] = [ _
 ["Monstrous Eye", "巨大的眼"], _
 ["Monstrous Fang", "巨大尖牙"], _
 ["Mountains", "双头龙山"], _ 
-["Mouse Wheel to scroll.", "Mouse Wheel to scroll."], _ ;未译
+["Mouse Wheel to scroll.", "用鼠标滑轮激发卷轴."], _ ;候选词：使用？
 ["Mouth of Torment, The", "苦痛之地隘口"], _
 ["Move Down", "Move Down"], _ ;未译
 ["Move Up", "Move Up"], _ ;未译
@@ -537,7 +537,7 @@ Local $ConversionTable[908][2] = [ _
 ["Oh boy, sleep! That's where I'm a Luxon.", "Oh boy, sleep! That's where I'm a Luxon."], _ ;未译
 ["Olafstead", "欧拉夫之地"], _
 ["Olias", "奥里亚斯"], _
-["Only affects windows (with a title bar), not widgets", "Only affects windows (with a title bar), not 配件"], _ ;未译
+["Only affects windows (with a title bar), not widgets", "仅对(有标题栏的)窗口有效, 对配件无效"], _ ;候选词：窗口？配件？
 ["Only in Domain of Anguish, within 1400 range", "Only in 悲难领地, within 1400 range"], _
 ["Only show messages containing:", "Only show messages containing:"], _ ;未译
 ["Onyx Gemstone", "玛瑙宝石"], _
@@ -784,9 +784,9 @@ Local $ConversionTable[908][2] = [ _
 ["Use %s", "Use %s"], _ ;未译
 ["Use Item", "Use Item"], _ ;未译
 ["Use an item from your inventory", "Use an item from your inventory"], _ ;未译
-["Use or cancel a skill such as Recall or UA", "Use or cancel a skill such as Recall or UA"], _ ;未译
+["Use or cancel a skill such as Recall or UA", "施展 或 取消 类似 回归 或 坚毅灵气 的技能"], _ 
 ["UseItem", "UseItem"], _ ;未译
-["Using level 1 alcohol instead of this is recommended for preventing drunk emotes.\n", "Using level 1 alcohol instead of this is recommended for preventing drunk emotes.\n"], _ ;未译
+["Using level 1 alcohol instead of this is recommended for preventing drunk emotes.\n", "如不愿触发醉酒姿态，可用等级 1 的酒水代之.\n"], _ 
 ["Lab", "迷宫"], _ 
 ["Vale", "遗忘谷"], _ 
 ["Vasburg Armory", "维思伯兵营"], _
@@ -821,7 +821,7 @@ Local $ConversionTable[908][2] = [ _
 ["Will hide the skills in your effect monitor", "Will hide the skills in your effect monitor"], _ ;未译
 ["Windows:", "Windows:"], _ ;未译
 ["Working", "Working"], _ ;未译
-["X pos##player", "X 坐标##player"], _ ;候选词： X向/轴 位/方位/定位
+["X pos##player", "X 坐标##player"], _ ;候选词： X向/轴 位/方位/定位 横纵
 ["X pos##target", "X 坐标##target"], _ ;候选词： X向/轴 位/方位/定位
 ["Xandra", "珊卓亚"], _
 ["Y pos##player", "Y 坐标##player"], _ ;候选词： X向/轴 位/方位/定位
@@ -954,7 +954,7 @@ Func Convert($lData)
 
 	For $i = 0 To Ubound($ConversionTable) - 1
         if $ConversionTable[$i][0] <> $ConversionTable[$i][1] then
-            $lData = StringReplace($lData, chr(34) & $ConversionTable[$i][0] & chr(34), chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_CASESENSE)
+            $lData = StringReplace($lData, chr(34) & $ConversionTable[$i][0] & chr(34), 'u8' & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_CASESENSE)
             ;替换过程中，以下指令会罔顾字条两端要有双引号的要求。或该用 stringregexpreplace 并 设定 词界        
             ;$lData = StringReplace($lData, '"' & $ConversionTable[$i][0] & '"', '"' & $ConversionTable[$i][1]  & '"', 0, $STR_CASESENSE)
         endif            
