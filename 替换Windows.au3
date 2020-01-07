@@ -397,13 +397,13 @@ Local $ConversionTable[908][2] = [ _
 ["Info", "数据"], _ 
 ["Interface:", "Interface:"], _ ;未译
 ["International", "国际区"], _ ;未译
-["Invalid argument '%ls', please use /pcons [|on|off]", "Invalid argument '%ls', please use /pcons [|on|off]"], _ ;未译
-["Invalid dialog number '%s'", "无效令码 '%s'"], _ 
+["Invalid argument '%ls', please use /pcons [|on|off]", "参数无效 '%ls', 正确格式为： /pcons [|on|off]"], _ 
+["Invalid dialog number '%s'", "令码无效 '%s'"], _ 
 ["Iron Mines of Moladune", "莫拉登矿山"], _
 ["It is needed to prevent toolbox from using a pcon twice, before it activates.\n", "It is needed to prevent toolbox from using a pcon twice, before it activates.\n"], _ ;未译
 ["It will automaticly withdraw and deposit gold while buying materials", "It will automaticly withdraw and deposit gold while buying materials"], _ ;未译
 ["It's a trick. Get an axe.", "It's a trick. Get an axe."], _ ;未译
-["Item #%d not found!", "Item #%d not found!"], _ ;未译
+["Item #%d not found!", "Item #%d 失寻!"], _ ;未译
 ["Item ID", "Item ID"], _ ;未译
 ["Item Name", "Item Name"], _ ;未译
 ["Item", "Item"], _ ;未译
@@ -754,7 +754,7 @@ Local $ConversionTable[908][2] = [ _
 ["Tomb of the Primeval Kings", "先王之墓"], _
 ["Toolbox normally loads settings on launch.\nClick to re-load from disk now.", "Toolbox normally loads settings on launch.\n点击以即可重装."], _ ;未译 ;候选词： 缺 ('重装' 欠佳)
 ["Toolbox normally saves settings on exit.\nClick to save to disk now.", "Toolbox normally saves settings on exit.\n点击以即刻存档."], _ ;未译
-["Toolbox will disable a pcon if it is not found in the inventory", "Toolbox will disable a pcon if it is not found in the inventory"], _ ;未译
+["Toolbox will disable a pcon if it is not found in the inventory", "如某补品从包内?失寻, 助手会关闭该补品的自动服用功能"], _ ;未译
 ["Toolbox", "Toolbox"], _ ;未译
 ["Tower of Strength", "力量之塔"], _
 ["Trade Alerts", "买卖提示"], _ 
