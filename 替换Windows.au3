@@ -734,7 +734,7 @@ Local $ConversionTable[908][2] = [ _
 ["There are several ways to open and close toolbox windows and widgets:", "There are several ways to open and close 助手窗口及配件:"], _ ;未译
 ["There's a reason there's a festival ticket in my ear. I'm trying to lure the evil spirits out of my head.", "There's a reason there's a festival ticket in my ear. I'm trying to lure the evil spirits out of my head."], _ ;未译
 ["Thirsty River", "干枯河流"], _
-["This feature is experimental and might crash your game.\n", "This feature is experimental and might crash your game.\n"], _ ;未译
+["This feature is experimental and might crash your game.\n", "该功能尚在其测试阶段，或会令游戏崩溃.\n"], _ 
 ["This house has many hearts.", "This house has many hearts."], _ ;未译
 ["This house is clean.", "This house is clean."], _ ;未译
 ["This will prevent kneel, bored, moan, flex, fistshake and roar.\n", "This will prevent kneel, bored, moan, flex, fistshake and roar.\n"], _ ;未译
