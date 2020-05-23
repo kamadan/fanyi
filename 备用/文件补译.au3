@@ -1108,7 +1108,7 @@ Local $ConversionTable[1086][2] = [ _
 ["Gwen", "关"] _
 ]
 
-Local $fileNames=_FileListToArray(@ScriptDir, "*.txt")
+Local $fileNames=_FileListToArray(@ScriptDir, "*.au3")
 
 
 for $i=1 to $fileNames[0]
@@ -1124,17 +1124,7 @@ for $i=1 to $fileNames[0]
 		if $readLine = "" then
 
 		Else
-			Local $dictionaryEntry
-			Local $convert = Convert($readLine)
-			if $readLine <> $convert then
-                $dictionaryEntry = "[" & $readLine & ", " & $convert & "], _"
-				;$dictionaryEntry = "["&'"'&"'"&'" & '& $readLine & " & "&'"'&"'"&'", '&'"'&"'"&'" & ' & $convert & ' & "'&"'"&'"], _'
-			else
-                $dictionaryEntry = "[" & $readLine & ", " & $convert & "], _ ;未译"
-				;$dictionaryEntry = "["&'"'&"'"&'" & '& $readLine & " & "&'"'&"'"&'", '&'"'&"'"&'" & ' & $convert & ' & "'&"'"&'"], _ ;未译'
-			endif
-
-			FileWriteLine($dFileOpen, $dictionaryEntry)
+			FileWriteLine($dFileOpen, Convert($readLine))
 		EndIf
 
 		$readLine = FileReadLine($hFileOpen)
@@ -1153,29 +1143,31 @@ Func Convert($lData)
 
 	For $i = 0 To Ubound($ConversionTable) - 1
 
-		Local $testString = $ConversionTable[$i][0]
+		Local $testString = ', "' & $ConversionTable[$i][0] & '"],'
 		if StringInStr($lData, $testString) then
-			$lData = StringReplace($lData, $testString, $ConversionTable[$i][1], 0, $STR_NOCASESENSE)
+			$lData = StringReplace($lData, $testString, ', "' & $ConversionTable[$i][1] & '"],', 0, $STR_NOCASESENSE)
 			continueloop
 		endif
 
 		$testString = StringReplace($testString, "'", "")
 		$testString = StringReplace($testString, "!", "")
 		if StringInStr($lData, $testString) then
-			$lData = StringReplace($lData, $testString, $ConversionTable[$i][1], 0, $STR_NOCASESENSE)
-			continueloop
-		endif
-
-		$testString = StringReplace($testString, " ", "")
-		if StringInStr($lData, $testString) then
-			$lData = StringReplace($lData, $testString, $ConversionTable[$i][1], 0, $STR_NOCASESENSE)
+			$lData = StringReplace($lData, $testString, ', "' & $ConversionTable[$i][1] & '"],', 0, $STR_NOCASESENSE)
 			continueloop
 		endif
 
 		$testString = StringReplace($testString, "(", "")
 		$testString = StringReplace($testString, ")", "")
 		if StringInStr($lData, $testString) then
-			$lData = StringReplace($lData, $testString, $ConversionTable[$i][1], 0, $STR_NOCASESENSE)
+			$lData = StringReplace($lData, $testString, ', "' & $ConversionTable[$i][1] & '"],', 0, $STR_NOCASESENSE)
+			continueloop
+		endif
+
+		$testString = StringReplace($testString, ', "', "")
+		$testString = StringReplace($testString, '"],', "")
+		$testString = StringReplace($testString, " ", "")
+		if StringInStr($lData, $testString) then
+			$lData = StringReplace($lData, ', "' & $testString & '"],', ', "' & $ConversionTable[$i][1] & '"],', 0, $STR_NOCASESENSE)
 			continueloop
 		endif
 
