@@ -6,7 +6,6 @@
 #include <File.au3>
 #include <WinAPI.au3>
 ;已被部分翻译，但未完全翻译的字条不算“未译”
-
 Local $ConversionTable[1889][2] = [ _
 ["Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value", "Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value"], _ ;未译
 ["'/load [build template|build name] [Hero index]' loads a build via Guild Wars builds. The build name must be between quotes if it contains spaces. First Hero index is 1, last is 7. Leave out for player", "'/load [build template|build name] [Hero index]' loads a build via Guild Wars builds. The build name must be between quotes if it contains spaces. First Hero index is 1, last is 7. Leave out for player"], _ ;未译
@@ -333,15 +332,15 @@ Local $ConversionTable[1889][2] = [ _
 ["Level = %d, tint = %d\n", "Level = %d, tint = %d\n"], _ ;未译
 ["DoA - Foundry 2: Foundry Breakout", "四门 - 铸造厂 2: 逃出铸造厂"], _
 ["Wanted by Shining Blade", "Wanted by Shining Blade"], _ ;未译
-["unwaking waters kurzick", "unwaking waters kurzick"], _ ;未译
-["sepulchre of dragrimmar", "sepulchre of dragrimmar"], _ ;未译
+["unwaking waters kurzick", "沉睡之水 (库兹柯)"], _ ;未译
+["sepulchre of dragrimmar", "爪格林玛坟墓"], _ ;未译
 ["not idle nor moving, %d", "not idle nor moving, %d"], _ ;未译
 ["No results found for %s", "No results found for %s"], _ ;未译
 ["Nicholas Sandford: 5 %s", "Nicholas Sandford: 5 %s"], _ ;未译
 ["knocked down or missing", "knocked down or missing"], _ ;未译
 ["Invalid bag slot %d/%d!", "Invalid bag slot %d/%d!"], _ ;未译
 ["Failed to parse message", "Failed to parse message"], _ ;未译
-["catacombs of kathandrax", "catacombs of kathandrax"], _ ;未译
+["catacombs of kathandrax", "卡山卓司的地下墓穴"], _ ;未译
 ["Cancel the current queue of operations", "取消现有或正待命的操作"], _
 ["Zone 9 | Blood Drinkers", "第 9 区 | Blood Drinkers"], _ ;未译
 ["Get away from my baby!", "Get away from my baby!"], _ ;未译
@@ -356,10 +355,10 @@ Local $ConversionTable[1889][2] = [ _
 ["No more %s items found", "No more %s items found"], _ ;未译
 ["Main Window Visibility", "Main Window Visibility"], _ ;未译
 ["kamadan jewel of istan", "kamadan jewel of istan"], _ ;未译
-["fort aspenwood kurzick", "fort aspenwood kurzick"], _ ;未译
+["fort aspenwood kurzick", "杨木要塞 (库兹柯)"], _ ;未译
 ["e.e. 'You are: Online'", "e.e. 'You are: Online'"], _ ;未译
 ["Available NPC Dialogs:", "Available NPC Dialogs:"], _ ;未译
-["aspenwood gate kurzick", "aspenwood gate kurzick"], _ ;未译
+["aspenwood gate kurzick", "杨木大门 (库兹柯)"], _ ;未译
 ["Agent Enc Name##target", "Agent Enc Name##target"], _ ;未译
 ["%s%s - %s%s###header%d", "%s%s - %s%s###header%d"], _ ;未译
 ["%s [%s]%s%s###header%u", "%s [%s]%s%s###header%u"], _ ;未译
@@ -375,7 +374,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Couldn't connect to the host '%s'", "无法连接主管站点 '%s'"], _
 ["Connected (not resigned)", "Connected (尚未发退出令)"], _ ;未译
 ["Wanted: <a=1>%s%s</a>", "Wanted: <a=1>%s%s</a>"], _ ;未译
-["unwaking waters luxon", "unwaking waters luxon"], _ ;未译
+["unwaking waters luxon", "沉睡之水 (勒克森)"], _ ;未译
 ["Searching trade for \", "Searching trade for \"], _ ;未译
 ["No friend '%ls' found", "No friend '%ls' found"], _ ;未译
 ["NextedStruct(%lu) {\n", "NextedStruct(%lu) {\n"], _ ;未译
@@ -400,16 +399,16 @@ Local $ConversionTable[1889][2] = [ _
 ["4...Itchy...Tasty...", "4...Itchy...Tasty..."], _ ;未译
 ["- ESCAPE to revert\n", "- ESCAPE to revert\n"], _ ;未译
 ["StoC packet(%lu) {\n", "StoC packet(%lu) {\n"], _ ;未译
-["saint anjekas shrine", "saint anjekas shrine"], _ ;未译
+["saint anjekas shrine", "圣者安捷卡的祭坛"], _ ;未译
 ["No more space for %s", "No more space for %s"], _ ;未译
-["minister chos estate", "minister chos estate"], _ ;未译
+["minister chos estate", "周大臣庄园_(探索区域)"], _ ;未译
 ["Maps exported to %ls", "Maps exported to %ls"], _ ;未译
 ["Friend List Commands", "Friend List Commands"], _ ;未译
-["fort aspenwood luxon", "fort aspenwood luxon"], _ ;未译
+["fort aspenwood luxon", "杨木要塞 (勒克森)"], _ ;未译
 ["Failed to add friend", "Failed to add friend"], _ ;未译
-["Ebon Vanguard Ritual", "Ebon Vanguard Ritual"], _ ;未译
+["Ebon Vanguard Ritual", "黑檀先锋队仪式"], _ ;未译
 ["DialogBody content: ", "DialogBody content: "], _ ;未译
-["aspenwood gate luxon", "aspenwood gate luxon"], _ ;未译
+["aspenwood gate luxon", "杨木大门 (勒克森)"], _ ;未译
 ["Price Check##essence", "估价##essence"], _ ;候选词： 验价，鉴价
 ["LA Gate -> LA @ Neiro", "狮门 -> 狮子拱门 @ Neiro"], _ ;未译
 ["Docks -> Kaineng @ Mhenlo", "领事馆码头 -> 凯宁中心 @ 涵洛"], _
@@ -430,7 +429,7 @@ Local $ConversionTable[1889][2] = [ _
 ["great northern wall", "great northern wall"], _ ;未译
 ["Faction Leaderboard", "Faction Leaderboard"], _ ;未译
 ["Competitive Mission", "Competitive Mission"], _ ;未译
-["cathedral of flames", "cathedral of flames"], _ ;未译
+["cathedral of flames", "火焰大教堂"], _ ;未译
 ["Build Chat Commands", "Build Chat Commands"], _ ;未译
 ["Price Check##pstone", "估价##pstone"], _ ;候选词： 验价，鉴价
 ["Moving to (%.0f, %.0f)", "正在前往坐标 (%.0f, %.0f)"], _
@@ -456,10 +455,10 @@ Local $ConversionTable[1889][2] = [ _
 ["} endpacket(%lu)\n", "} endpacket(%lu)\n"], _ ;未译
 ["Weekly Bonus (PvP)", "Weekly Bonus (PvP)"], _ ;未译
 ["Weekly Bonus (PvE)", "Weekly Bonus (PvE)"], _ ;未译
-["vloxen excavations", "vloxen excavations"], _ ;未译
+["vloxen excavations", "弗洛森古迹"], _ ;未译
 ["Trade Window mode:", "Trade Window mode:"], _ ;未译
 ["Target##cam_target", "Target##cam_target"], _ ;未译
-["jade flats kurzick", "jade flats kurzick"], _ ;未译
+["jade flats kurzick", "翡翠浅滩 (库兹柯)"], _ ;未译
 ["In-Game Trade Chat", "In-Game Trade Chat"], _ ;未译
 ["Guild Info##target", "Guild Info##target"], _ ;未译
 ["friend_list_scroll", "friend_list_scroll"], _ ;未译
@@ -478,14 +477,14 @@ Local $ConversionTable[1889][2] = [ _
 ["Player ID##player", "Player ID##player"], _ ;未译
 ["Enabled###pconstoggle", "已启动###pconstoggle"], _
 ["vanguard tomorrow", "vanguard tomorrow"], _ ;未译
-["rragars menagerie", "rragars menagerie"], _ ;未译
+["rragars menagerie", "拉喀的牢笼"], _ ;未译
 ["Position##cam_pos", "Position##cam_pos"], _ ;未译
 ["nicholas tomorrow", "nicholas tomorrow"], _ ;未译
 ["jade quarry luxon", "jade quarry luxon"], _ ;未译
-["frostmaws burrows", "frostmaws burrows"], _ ;未译
-["Enchantment Spell", "Enchantment Spell"], _ ;未译
-["domain of anguish", "domain of anguish"], _ ;未译
-["dalessio seaboard", "dalessio seaboard"], _ ;未译
+["frostmaws burrows", "冻霜地道"], _ ;未译
+["Enchantment Spell", "加持魔法"], _ ;未译
+["domain of anguish", "悲难领地"], _ ;未译
+["dalessio seaboard", "达雷西海滨"], _ ;未译
 ["Connected Locally", "Connected Locally"], _ ;未译
 ["Move to (%.0f, %.0f)", "前往坐标 (%.0f, %.0f)"], _
 ["Load build on your character", "为角色装填技能样本"], _
@@ -519,10 +518,10 @@ Local $ConversionTable[1889][2] = [ _
 ["Pcons loaded: %s", "Pcons loaded: %s"], _ ;未译
 ["Northern Support", "Northern Support"], _ ;未译
 ["mouth of torment", "mouth of torment"], _ ;未译
-["jade flats luxon", "jade flats luxon"], _ ;未译
+["jade flats luxon", "翡翠浅滩 (勒克森)"], _ ;未译
 ["Go to Guild Hall", "Go to Guild Hall"], _ ;未译
-["gadds encampment", "gadds encampment"], _ ;未译
-["fishermens haven", "fishermens haven"], _ ;未译
+["gadds encampment", "盖德营地"], _ ;未译
+["fishermens haven", "渔人避风港"], _ ;未译
 ["Build loaded: %s", "Build loaded: %s"], _ ;未译
 ["Array32(%lu) {\n", "Array32(%lu) {\n"], _ ;未译
 ["Array16(%lu) {\n", "Array16(%lu) {\n"], _ ;未译
@@ -553,27 +552,27 @@ Local $ConversionTable[1889][2] = [ _
 ["[Pcons][%s %d] ", "[Pcons][%s %d] "], _ ;未译
 ["Zaishen Mission", "Zaishen Mission"], _ ;未译
 ["wanted tomorrow", "wanted tomorrow"], _ ;未译
-["ventaris refuge", "ventaris refuge"], _ ;未译
+["ventaris refuge", "凡特里庇护所"], _ ;未译
 ["Vect2(%f, %f)\n", "Vect2(%f, %f)\n"], _ ;未译
 ["The Floodplain of Mahnkelon", "曼克隆泛滥平原"], _
-["seekers passage", "seekers passage"], _ ;未译
-["Off-Hand Attack", "Off-Hand Attack"], _ ;未译
+["seekers passage", "探索者通道"], _ ;未译
+["Off-Hand Attack", "即刻攻击"], _ ;未译
 ["NPC ModelFileID", "NPC ModelFileID"], _ ;未译
 ["Log NPC Dialogs", "Log NPC Dialogs"], _ ;未译
 ["Ignored Packets", "Ignored Packets"], _ ;未译
-["heroes audience", "heroes audience"], _ ;未译
-["hells precipice", "hells precipice"], _ ;未译
+["heroes audience", "英雄之痕"], _ ;未译
+["hells precipice", "地狱悬崖"], _ ;未译
 ["granite citadel", "granite citadel"], _ ;未译
 ["Gandara, the Moon Fortress", "弦月要塞，干达拉"], _
 ["Faction Support", "Faction Support"], _ ;未译
 ["Export Map Info", "Export Map Info"], _ ;未译
 ["Encoded string:", "Encoded string:"], _ ;未译
 ["Elonian Support", "Elonian Support"], _ ;未译
-["druids overlook", "druids overlook"], _ ;未译
+["druids overlook", "德鲁伊高地"], _ ;未译
 ["Droajam, Mage of the Sands", "沙之法师 卓加姆"], _
-["darkrime delves", "darkrime delves"], _ ;未译
+["darkrime delves", "黑霜洞穴"], _ ;未译
 ["Characters for ", "Characters for "], _ ;未译
-["bogroot growths", "bogroot growths"], _ ;未译
+["bogroot growths", "泥塘根源地"], _ ;未译
 ["barradin estate", "barradin estate"], _ ;未译
 ["Auto load pcons", "Auto load pcons"], _ ;未译
 ["Array8(%lu) {\n", "Array8(%lu) {\n"], _ ;未译
@@ -609,27 +608,27 @@ Local $ConversionTable[1889][2] = [ _
 ["Ssuns, Blessed of Dwayna", "薇娜的祝福 桑斯"], _
 ["Show past runs", "Show past runs"], _ ;未译
 ["Show my status", "Show my status"], _ ;未译
-["seafarers rest", "seafarers rest"], _ ;未译
+["seafarers rest", "航海者休憩处"], _ ;未译
 ["MessageLocal: ", "MessageLocal: "], _ ;未译
 ["Maximilian the Meticulous", "细心的马希米连"], _
-["marhans grotto", "marhans grotto"], _ ;未译
-["longeyes ledge", "longeyes ledge"], _ ;未译
+["marhans grotto", "马翰洞穴"], _ ;未译
+["longeyes ledge", "长眼岩脉"], _ ;未译
 ["instance_start", "instance_start"], _ ;未译
 ["Harn and Maxine Coldstone", "冰石哈恩/麦辛"], _
 ["Feathered Avicara Scalps", "阿比卡拉头皮羽毛"], _
 ["Factions Elite", "Factions Elite"], _ ;未译
 ["Export to JSON", "Export to JSON"], _ ;未译
 ["Enable Logging", "Enable Logging"], _ ;未译
-["droknars forge", "droknars forge"], _ ;未译
-["dragons throat", "dragons throat"], _ ;未译
+["droknars forge", "卓克纳熔炉"], _ ;未译
+["dragons throat", "龙喉"], _ ;未译
 ["Do not disturb", "Do not disturb"], _ ;未译
-["destinys gorge", "destinys gorge"], _ ;未译
+["destinys gorge", "命运峡谷"], _ ;未译
 ["dailies_scroll", "dailies_scroll"], _ ;未译
-["champions dawn", "champions dawn"], _ ;未译
-["Binding Ritual", "Binding Ritual"], _ ;未译
+["champions dawn", "勇士曙光"], _ ;未译
+["Binding Ritual", "缚灵仪式"], _ ;未译
 ["AgentId(%lu)\n", "AgentId(%lu)\n"], _ ;未译
 ["Advanced##item", "Advanced##item"], _ ;未译
-["abaddons mouth", "abaddons mouth"], _ ;未译
+["abaddons mouth", "地狱隘口"], _ ;未译
 ["###dialoginput", "###dialoginput"], _ ;未译
 ["###dialogcombo", "###dialogcombo"], _ ;未译
 ["timestamp", "timestamp"], _ ;未译 ;候选词： 时戳
@@ -661,39 +660,39 @@ Local $ConversionTable[1889][2] = [ _
 ["Clicker is %s", "Clicker is %s"], _ ;未译
 ["Add Teambuild", "Add Teambuild"], _ ;未译
 [" duration: %d", " duration: %d"], _ ;未译
-["urgozs warren", "urgozs warren"], _ ;未译
+["urgozs warren", "尔果的养殖场"], _ ;未译
 ["String(%lu) \", "String(%lu) \"], _ ;未译
 ["Singed Gargoyle Skulls", "烧焦的石像鬼头颅"], _
-["senjis corner", "senjis corner"], _ ;未译
-["Scythe Attack", "Scythe Attack"], _ ;未译
-["Ranged Attack", "Ranged Attack"], _ ;未译
+["senjis corner", "山吉之街"], _ ;未译
+["Scythe Attack", "镰刀进攻技能"], _ ;未译
+["Ranged Attack", "区域攻击"], _ ;未译
 ["Powered by %s", "Powered by %s"], _ ;未译
 ["Packet Logger", "Packet Logger"], _ ;未译
 ["NPC ModelFile", "NPC ModelFile"], _ ;未译
-["Nature Ritual", "Nature Ritual"], _ ;未译
+["Nature Ritual", "自然仪式"], _ ;未译
 ["model_file_id", "model_file_id"], _ ;未译
 ["MessageCore: ", "MessageCore: "], _ ;未译
 ["kodash bazaar", "kodash bazaar"], _ ;未译
-["jennurs horde", "jennurs horde"], _ ;未译
+["jennurs horde", "征钠群落"], _ ;未译
 ["in explorable", "in explorable"], _ ;未译
-["heroes ascent", "heroes ascent"], _ ;未译
-["Hammer Attack", "Hammer Attack"], _ ;未译
+["heroes ascent", "英雄之路"], _ ;未译
+["Hammer Attack", "锤术攻击技能"], _ ;未译
 ["Game Settings", "Game Settings"], _ ;未译
 ["Forgotten Trinket Boxes", "被遗忘的小箱子"], _
 ["Feathered Caromi Scalps", "卡洛米羽毛头皮"], _
 ["eternal grove", "eternal grove"], _ ;未译
 ["Delete Build?", "Delete Build?"], _ ;未译
-["Dagger Attack", "Dagger Attack"], _ ;未译
+["Dagger Attack", "匕首攻击技能"], _ ;未译
 ["Copper Crimson Skull Coins", "红颅铜币"], _
 ["Chat Settings", "Chat Settings"], _ ;未译
 ["cancel action", "cancel action"], _ ;未译
 ["Buffs##player", "Buffs##player"], _ ;未译
 ["Blob(%lu) => ", "Blob(%lu) => "], _ ;未译
 ["Blazefiend Griefblade", "火焰恶魔 悲伤刀片"], _
-["beacons perch", "beacons perch"], _ ;未译
+["beacons perch", "毕肯高地"], _ ;未译
 ["Barthimus the Provident", "算计者巴希穆斯"], _
 ["Assault on the Stronghold", "袭击根据地"], _
-["abaddons gate", "abaddons gate"], _ ;未译
+["abaddons gate", "亚霸顿之门"], _ ;未译
 ["##commoncombo", "##commoncombo"], _ ;未译
 ["##alertfilter", "##alertfilter"], _ ;未译
 ["###essenceqty", "###essenceqty"], _ ;未译
@@ -743,27 +742,27 @@ Local $ConversionTable[1889][2] = [ _
 ["%s_threshold", "%s_threshold"], _ ;未译
 ["%s###build%d", "%s###build%d"], _ ;未译
 ["[Pcons][%s] ", "[Pcons][%s] "], _ ;未译
-["Weapon Spell", "Weapon Spell"], _ ;未译
+["Weapon Spell", "武装魔法"], _ ;未译
 ["Triggered %s", "Triggered %s"], _ ;未译
 ["The Elusive Golemancer", "乌啦的实验室"], _
 ["Text spacing", "Text spacing"], _ ;未译
-["Sword Attack", "Sword Attack"], _ ;未译
+["Sword Attack", "剑术攻击技能"], _ ;未译
 ["Superb Charr Carvings", "超级夏尔雕刻品"], _
-["Spear Attack", "Spear Attack"], _ ;未译
+["Spear Attack", "矛术进攻技能"], _ ;未译
 ["shadow nexus", "shadow nexus"], _ ;未译
 ["Sarnia the Red-Handed", "染血之手萨妮亚"], _
 ["removefriend", "removefriend"], _ ;未译
-["ravens point", "ravens point"], _ ;未译
-["Melee Attack", "Melee Attack"], _ ;未译
+["ravens point", "渡鸦岬角"], _ ;未译
+["Melee Attack", "近身攻击技能"], _ ;未译
 ["Map District", "Map District"], _ ;未译
 ["Korshek the Immolated", "宰杀者 科薛克"], _
 ["is_tb_friend", "is_tb_friend"], _ ;未译
-["gunnars hold", "gunnars hold"], _ ;未译
+["gunnars hold", "甘拿的占领地"], _ ;未译
 ["Greves the Overbearing", "傲慢的葛力斯"], _
 ["Ghial the Bone Dancer", "骨之舞者 葛西"], _
 ["Frostmaw the Kinslayer", "冻击 弑族者"], _
 ["Forest Minotaur Horns", "森林牛头怪的角"], _
-["foibles fair", "foibles fair"], _ ;未译
+["foibles fair", "佛伊伯市集"], _ ;未译
 ["Elonian Leather Squares", "伊洛那皮革"], _
 ["Elementalist", "Elementalist"], _ ;未译
 ["Dword(%lu)\n", "Dword(%lu)\n"], _ ;未译
@@ -829,9 +828,9 @@ Local $ConversionTable[1889][2] = [ _
 ["zc tomorrow", "zc tomorrow"], _ ;未译
 ["zb tomorrow", "zb tomorrow"], _ ;未译
 ["Word(%lu)\n", "Word(%lu)\n"], _ ;未译
-["vloxs falls", "vloxs falls"], _ ;未译
+["vloxs falls", "弗洛克斯瀑布"], _ ;未译
 ["TPS Regulator Golem", "TPS调节高轮"], _
-["Touch Skill", "Touch Skill"], _ ;未译
+["Touch Skill", "碰触技能"], _ ;未译
 ["The Stygian Underlords", "冥狱地王"], _
 ["Slot (1-25)", "Slot (1-25)"], _ ;未译
 ["skills.json", "skills.json"], _ ;未译
@@ -839,19 +838,19 @@ Local $ConversionTable[1889][2] = [ _
 ["Roaring Ether Claws", "苍穹咆哮者之爪"], _
 ["Quoted Item", "Quoted Item"], _ ;未译
 ["Quansong Spiritspeak", "通灵者 魁嵩"], _
-["Preparation", "Preparation"], _ ;未译
+["Preparation", "准备技能"], _ ;未译
 ["Plague of Destruction", "疫之破坏者"], _
 ["on %A at %R", "on %A at %R"], _ ;未译
 ["Necromancer", "Necromancer"], _ ;未译
 ["marketplace", "marketplace"], _ ;未译
-["Lead Attack", "Lead Attack"], _ ;未译
+["Lead Attack", "引导攻击"], _ ;未译
 ["Interaction", "Interaction"], _ ;未译
 ["GWToolbox++", "GWToolbox++"], _ ;未译
 ["Friend List", "Friend List"], _ ;未译
 ["Float(%f)\n", "Float(%f)\n"], _ ;未译
 ["First Close", "First Close"], _ ;未译
 ["Finding the Bloodstone", "寻找血石"], _
-["Dual Attack", "Dual Attack"], _ ;未译
+["Dual Attack", "双重攻击"], _ ;未译
 ["description", "description"], _ ;未译
 ["Decayed Orr Emblems", "腐烂的欧尔纹章"], _
 ["Byte(%lu)\n", "Byte(%lu)\n"], _ ;未译
@@ -929,10 +928,10 @@ Local $ConversionTable[1889][2] = [ _
 ["%s_visible", "%s_visible"], _ ;未译
 ["%.0f milliseconds", "%.0f 毫秒"], _
 ["Wilderness of Bahdza", "巴萨荒野"], _
-["Well Spell", "Well Spell"], _ ;未译
+["Well Spell", "涌泉魔法"], _ ;未译
 ["week start", "week start"], _ ;未译
 ["Water Djinn Essence", "水巨灵精华"], _
-["Ward Spell", "Ward Spell"], _ ;未译
+["Ward Spell", "结界魔法"], _ ;未译
 ["War Supply", "War Supply"], _ ;未译
 ["Vess the Disputant", "争论者 薇丝"], _
 ["The Sulfurous Wastes", "硫磺荒地"], _
@@ -945,19 +944,19 @@ Local $ConversionTable[1889][2] = [ _
 ["Royen Beastkeeper", "野兽看守者罗彦"], _
 ["Ring of Fire Islands", "火环列岛"], _
 ["Profession", "Profession"], _ ;未译
-["Pet Attack", "Pet Attack"], _ ;未译
+["Pet Attack", "宠物攻击"], _ ;未译
 ["Off @ boss", "Off @ boss"], _ ;未译
 ["objectives", "objectives"], _ ;未译
 ["Map Region", "Map Region"], _ ;未译
 ["Mandragor Swamproots", "曼陀罗根"], _
 ["Maguuma Spider Web", "梅古玛蜘蛛丝"], _
-["lions arch", "lions arch"], _ ;未译
+["lions arch", "狮子拱门"], _ ;未译
 ["Last Close", "Last Close"], _ ;未译
 ["kathandrax", "kathandrax"], _ ;未译
 ["Justiciar Thommis", "司法官 汤米兹"], _
 ["Jungle Troll Tusks", "丛林巨魔獠牙"], _
 ["jq kurzick", "jq kurzick"], _ ;未译
-["Item Spell", "Item Spell"], _ ;未译
+["Item Spell", "抱持魔法"], _ ;未译
 ["in outpost", "in outpost"], _ ;未译
 ["Grenth's Footprint", "古兰斯的足迹"], _
 ["Green Rock", "Green Rock"], _ ;未译
@@ -968,8 +967,8 @@ Local $ConversionTable[1889][2] = [ _
 ["Extra Luck", "Extra Luck"], _ ;未译
 ["Equip Item", "Equip Item"], _ ;未译
 ["Dreadnought's Drift", "无惧者之丘"], _
-["Bow Attack", "Bow Attack"], _ ;未译
-["Axe Attack", "Axe Attack"], _ ;未译
+["Bow Attack", "弓术攻击技能"], _ ;未译
+["Axe Attack", "斧术攻击技能"], _ ;未译
 ["Ancient Kappa Shells", "古河童壳"], _
 ["A Time for Heroes", "英雄的光采年代"], _
 ["UW - Pools", "地下 - 恐惧蛛化精灵女王"], _
@@ -1049,7 +1048,7 @@ Local $ConversionTable[1889][2] = [ _
 ["10 Plant Fibers", "10 植物纤维"], _
 ["10 Bolts of Cloth", "10 布料"], _
 ["%s_active", "%s_active"], _ ;未译
-["yaks bend", "yaks bend"], _ ;未译
+["yaks bend", "牦牛村"], _ ;未译
 ["Witman's Folly", "威特曼的怪异建筑"], _
 ["utc_start", "utc_start"], _ ;未译
 ["Turai's Procession", "托雷长廊"], _
@@ -1076,7 +1075,7 @@ Local $ConversionTable[1889][2] = [ _
 ["loadbuild", "loadbuild"], _ ;未译
 ["Last Open", "Last Open"], _ ;未译
 ["Justiciar Amilyn", "判官 亚蜜琳"], _
-["Hex Spell", "Hex Spell"], _ ;未译
+["Hex Spell", "降咒魔法"], _ ;未译
 ["Gruesome Ribcages", "可怕的胸腔"], _
 ["Gadget ID", "Gadget ID"], _ ;未译
 ["EquipItem", "EquipItem"], _ ;未译
@@ -1228,7 +1227,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Red Rock", "Red Rock"], _ ;未译
 ["Phantom Residue", "幻影残留物"], _
 ["Pantheon", "Pantheon"], _ ;未译
-["ooze pit", "ooze pit"], _ ;未译
+["ooze pit", "乌兹地窖"], _ ;未译
 ["nicholas", "nicholas"], _ ;未译
 ["Name Enc", "Name Enc"], _ ;未译
 ["Mossy Mandibles", "生苔下颚骨"], _
@@ -1579,8 +1578,8 @@ Local $ConversionTable[1889][2] = [ _
 ["surmia", "surmia"], _ ;未译
 ["Stone Carving", "石雕品"], _
 ["status", "status"], _ ;未译
-["Stance", "Stance"], _ ;未译
-["Signet", "Signet"], _ ;未译
+["Stance", "态势"], _ ;未译
+["Signet", "纹章"], _ ;未译
 ["Scroll", "Scroll"], _ ;未译
 ["region", "region"], _ ;未译
 ["Ranger", "Ranger"], _ ;未译
@@ -1645,14 +1644,14 @@ Local $ConversionTable[1889][2] = [ _
 ["Black Pearls", "黑珍珠"], _
 ["Behemoth Jaw", "巨兽颚"], _
 ["Azure Crest", "湛蓝羽冠"], _
-["title", "title"], _ ;未译
+["title", "头衔"], _ ;未译
 ["query", "query"], _ ;未译
 ["plane", "plane"], _ ;未译
 ["pcons", "pcons"], _ ;未译
 ["Waste", "Waste"], _ ;未译
 ["Trade", "Trade"], _ ;未译
 ["Timer", "Timer"], _ ;未译
-["Skill", "Skill"], _ ;未译
+["Skill", "技能"], _ ;未译
 ["Show:", "Show:"], _ ;未译
 ["Ready", "Ready"], _ ;未译
 ["Range", "Range"], _ ;未译
@@ -1676,12 +1675,12 @@ Local $ConversionTable[1889][2] = [ _
 ["Verata", "死灵法师 芙瑞达"], _
 ["Sunqua Vale", "桑泉谷"], _
 ["Stormy Eye", "暴风之眼"], _
-["Spell", "Spell"], _ ;未译
+["Spell", "咒文魔法"], _ ;未译
 ["Soul Stones", "灵魂石"], _
 ["Skull Juju", "头骨土符"], _
 ["Skelk Claws", "司怪爪"], _
 ["Skale Fins", "鳞怪鳍s"], _
-["Shout", "Shout"], _ ;未译
+["Shout", "战嚎"], _ ;未译
 ["Sage Lands", "贤者领地"], _
 ["on %A", "on %A"], _ ;未译
 ["Naga Skins", "迦纳外皮"], _
@@ -1692,13 +1691,13 @@ Local $ConversionTable[1889][2] = [ _
 ["Jotun Pelt", "角顿皮毛"], _
 ["Index", "Index"], _ ;未译
 ["Guild", "Guild"], _ ;未译
-["Glyph", "Glyph"], _ ;未译
+["Glyph", "符号"], _ ;未译
 ["Gloom Seed", "黑暗种子"], _
 ["Forgewight", "炼冶维特"], _
 ["flags", "flags"], _ ;未译
 ["Debug", "Debug"], _ ;未译
 ["daily", "daily"], _ ;未译
-["Chant", "Chant"], _ ;未译
+["Chant", "圣歌"], _ ;未译
 ["Archipelagos", "群岛"], _
 ["Amber Chunks", "琥珀"], _
 ["alias", "alias"], _ ;未译
@@ -1760,7 +1759,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Arborstone", "亭石"], _
 ["Wiki", "Wiki"], _ ;未译
 ["View", "View"], _ ;未译
-["Trap", "Trap"], _ ;未译
+["Trap", "陷阱"], _ ;未译
 ["The Falls", "陷落区"], _
 ["The Breach", "缺口"], _
 ["Slot", "Slot"], _ ;未译
@@ -1772,10 +1771,10 @@ Local $ConversionTable[1889][2] = [ _
 ["Prof", "Prof"], _ ;未译
 ["Monk", "Monk"], _ ;未译
 ["Icy Humps", "冰雪瘤"], _
-["Form", "Form"], _ ;未译
+["Form", "形态"], _ ;未译
 ["Fendi Nin", "梵蒂宁"], _
 ["fake", "fake"], _ ;未译
-["Echo", "Echo"], _ ;未译
+["Echo", "回响"], _ ;未译
 ["done", "done"], _ ;未译
 ["Date", "Date"], _ ;未译
 ["blue", "blue"], _ ;未译
@@ -1898,42 +1897,30 @@ Local $ConversionTable[1889][2] = [ _
 ["Take", "接"], _
 ["Gwen", "关"] _
 ]
-
 ;记录文件夹及其子夹内的所有.cpp文件名
 Local $fileNames=_FileListToArrayRec(@ScriptDir, "*.cpp", $FLTAR_FILES,  $FLTAR_RECUR)
 ;除去记录文件数目的首项
 _ArrayDelete($fileNames, 0)
-
 ;记录文件夹及其子夹内的所有.h文件名
 Local $fileNames1=_FileListToArrayRec(@ScriptDir, "*.h", $FLTAR_FILES,  $FLTAR_RECUR)
 ;除去记录文件数目的首项
 _ArrayDelete($fileNames1, 0)
-
 ;拼凑以上结果
 _ArrayConcatenate($fileNames, $fileNames1)
-
 ;在首部插入统计文件总数的项
 _ArrayInsert ($fileNames, 0, UBound($fileNames))
-
 for $i=1 to $fileNames[0]
-
 	Local $rFileOpen = FileOpen($fileNames[$i])
 	Local $fileRead =FileRead($rFileOpen)
 	FileClose($rFileOpen)
-
 	$fileRead = Convert($fileRead)
-
 	Local $wFileOpen = FileOpen($fileNames[$i], 130)
 	FileWrite ($wFileOpen, $fileRead)
 	FileClose($wFileOpen)
 Next
-
 msgbox(0,"提示", "替换完毕")
-
 Func Convert($lData)
-
 	Local $original = $lData
-
 	For $i = 0 To Ubound($ConversionTable) - 1
         if $ConversionTable[$i][0] <> $ConversionTable[$i][1] then
 			$lData = StringReplace($lData, " " & chr(34) & $ConversionTable[$i][0] & chr(34), " u8" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
@@ -1942,7 +1929,5 @@ Func Convert($lData)
             ;$lData = StringRegExpReplace($lData, "(?)\b" & chr(34) & $ConversionTable[$i][0] & chr(34) & "\b", ' u8' & chr(34) & $ConversionTable[$i][1]  & chr(34) & " ")
         endif
 	Next
-
 	return $lData
-
 EndFunc
