@@ -3381,7 +3381,7 @@ Func Convert($lData)
 	Local $original = $lData
 	For $i = 0 To Ubound($ConversionTable) - 1
         if $ConversionTable[$i][0] <> $ConversionTable[$i][1] then
-			$lData = StringReplace($lData, " " & chr(34) & $ConversionTable[$i][0] & chr(34), " u8" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
+			$lData = StringReplace($lData, chr(34) & $ConversionTable[$i][0] & chr(34), "u8" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
             ;替换过程中，以下指令会罔顾字条两端要有双引号的要求。或该用 stringregexpreplace 并 设定 词界。---> 但是，或需处理搜索词内的括号 <---
 			;---> 词界 \b 被 空格 所替代了 <---
             ;$lData = StringRegExpReplace($lData, "(?)\b" & chr(34) & $ConversionTable[$i][0] & chr(34) & "\b", ' u8' & chr(34) & $ConversionTable[$i][1]  & chr(34) & " ")
