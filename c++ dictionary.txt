@@ -1,0 +1,24 @@
+
+#include <iostream> 
+#include <iterator> 
+#include <map> 
+  
+  
+int main() 
+{ 
+  
+    // empty map container 
+    std::map<const char*, const char*> gquiz1{
+        {"test", "test1"},
+        {u8"测试", u8"测试1"},
+        {u8"测试2", u8"测试3"}
+        }; 
+    std::map<const char*, const char*>::iterator itr; 
+    for (itr = gquiz1.begin(); itr != gquiz1.end(); ++itr) { 
+        std::cout << '\t' << itr->first 
+             << '\t' << itr->second << '\n'; 
+    } 
+    std::cout << std::endl; 
+  
+    return 0; 
+} 
