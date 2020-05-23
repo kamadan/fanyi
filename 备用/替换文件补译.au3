@@ -19,7 +19,57 @@
 ;^(.*?) :=: (.*?)$
 ;\["$1", "$2"\], _
 
-Local $ConversionTable[1036][2] = [ _
+Local $ConversionTable[1086][2] = [ _
+["flash enchantment spell", "即刻加持魔法"], _
+["half range bow attack", "半距弓术攻击"], _
+["ebon vanguard ritual", "黑檀先锋队仪式"], _
+["half range hex spell", "半距降咒魔法"], _
+["spear melee attack", "近战矛术攻击"], _
+["environment effect", "环境效应"], _
+["touch hex spell", "碰触降咒魔法"], _
+["half range signet", "半距纹章"], _
+["enchantment spell", "加持魔法"], _
+["half range spell", "半距魔法"], _
+["half range skill", "半距技能"], _
+["scythe attack", "镰刀进攻技能"], _
+["off-hand attack", "即刻攻击"], _
+["hammer attack", "锤术攻击技能"], _
+["dagger attack", "匕首攻击技能"], _
+["sword attack", "剑术攻击技能"], _
+["spear attack", "矛术进攻技能"], _
+["melee attack", "近身攻击技能"], _
+["binding ritual", "缚灵仪式"], _
+["ranged attack", "区域攻击"], _
+["nature ritual", "自然仪式"], _
+["weapon spell", "武装魔法"], _
+["bow attack", "弓术攻击技能"], _
+["axe attack", "斧术攻击技能"], _
+["attack skill", "攻击技能"], _
+["touch spell", "碰触魔法"], _
+["touch skill", "碰触技能"], _
+["preparation", "准备技能"], _
+["party bonus", "队伍奖励"], _
+["lead attack", "引导攻击"], _
+["dual attack", "双重攻击"], _
+["well spell", "涌泉魔法"], _
+["ward spell", "结界魔法"], _
+["pet attack", "宠物攻击"], _
+["item spell", "抱持魔法"], _
+["hex spell", "降咒魔法"], _
+["condition", "病症"], _
+["disguise", "伪装"], _
+["blessing", "赐福"], _
+["spell", "咒文魔法"], _
+["stance", "态势"], _
+["signet", "纹章"], _
+["title", "头衔"], _
+["skill", "技能"], _
+["shout", "战嚎"], _
+["glyph", "符号"], _
+["chant", "圣歌"], _
+["trap", "陷阱"], _
+["form", "形态"], _
+["echo", "回响"], _
 ["Jade Quarry (Kurzick), The", "翡翠矿场 (库兹柯)"], _ ;["The Jade Quarry", "翡翠矿场"], _
 ["Great Northern Wall, The", "北方长城"], _ ;["The Great Northern Wall", "北方长城"], _
 ["Mouth of Torment, The", "苦痛之地隘口"], _ ;["The Mouth of Torment", "苦痛之地隘口"], _
@@ -1058,7 +1108,7 @@ Local $ConversionTable[1036][2] = [ _
 ["Gwen", "关"] _
 ]
 
-Local $fileNames=_FileListToArray(@ScriptDir, "*.txt")
+Local $fileNames=_FileListToArray(@ScriptDir, "*.au3")
 
 
 for $i=1 to $fileNames[0]
@@ -1103,29 +1153,31 @@ Func Convert($lData)
 
 	For $i = 0 To Ubound($ConversionTable) - 1
 
-		Local $testString = $ConversionTable[$i][0]
+		Local $testString = ', "' & $ConversionTable[$i][0] & '"],'
 		if StringInStr($lData, $testString) then
-			$lData = StringReplace($lData, $testString, $ConversionTable[$i][1], 0, $STR_CASESENSE)
+			$lData = StringReplace($lData, $testString, ', "' & $ConversionTable[$i][1] & '"],', 0, $STR_NOCASESENSE)
 			continueloop
 		endif
 
 		$testString = StringReplace($testString, "'", "")
 		$testString = StringReplace($testString, "!", "")
 		if StringInStr($lData, $testString) then
-			$lData = StringReplace($lData, $testString, $ConversionTable[$i][1], 0, $STR_CASESENSE)
-			continueloop
-		endif
-
-		$testString = StringReplace($testString, " ", "")
-		if StringInStr($lData, $testString) then
-			$lData = StringReplace($lData, $testString, $ConversionTable[$i][1], 0, $STR_CASESENSE)
+			$lData = StringReplace($lData, $testString, ', "' & $ConversionTable[$i][1] & '"],', 0, $STR_NOCASESENSE)
 			continueloop
 		endif
 
 		$testString = StringReplace($testString, "(", "")
 		$testString = StringReplace($testString, ")", "")
 		if StringInStr($lData, $testString) then
-			$lData = StringReplace($lData, $testString, $ConversionTable[$i][1], 0, $STR_CASESENSE)
+			$lData = StringReplace($lData, $testString, ', "' & $ConversionTable[$i][1] & '"],', 0, $STR_NOCASESENSE)
+			continueloop
+		endif
+
+		$testString = StringReplace($testString, ', "', "")
+		$testString = StringReplace($testString, '"],', "")
+		$testString = StringReplace($testString, " ", "")
+		if StringInStr($lData, $testString) then
+			$lData = StringReplace($lData, ', "' & $testString & '"],', ', "' & $ConversionTable[$i][1] & '"],', 0, $STR_NOCASESENSE)
 			continueloop
 		endif
 
