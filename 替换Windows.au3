@@ -27,7 +27,7 @@ Local $ConversionTable[1889][2] = [ _
 ["There's a reason there's a festival ticket in my ear. I'm trying to lure the evil spirits out of my head.", "There's a reason there's a festival ticket in my ear. I'm trying to lure the evil spirits out of my head."], _ ;未译
 ["Mommy? Where are you? I can't find you. I can't. I'm afraid of the light, mommy. I'm afraid of the light.", "Mommy? Where are you? I can't find you. I can't. I'm afraid of the light, mommy. I'm afraid of the light."], _ ;未译
 ["Keep a record or your runs in JSON format on disk, and load past runs from disk when starting GWToolbox.", "Keep a record or your runs in JSON format on disk, and load past runs from disk when starting GWToolbox."], _ ;未译
-["Note: the names of the widgets without a visible title bar are the same as in the setting headers below.", "Note: the names of the 配件 without a visible title bar are the same as in the setting headers below."], _ ;未译
+["Note: the names of the widgets without a visible title bar are the same as in the setting headers below.", "Note: the names of the 配件 without a visible title bar are the same as in the setting headers below."], _
 ["I will fill your hearts with visions of horror and despair that will haunt you for all of your days.", "I will fill your hearts with visions of horror and despair that will haunt you for all of your days."], _ ;未译
 ["You are messing with affairs that are beyond your comprehension. Leave now and I may let you live!", "You are messing with affairs that are beyond your comprehension. Leave now and I may let you live!"], _ ;未译
 ["Then the healer told me that BOTH my eyes were lazy. And that's why it was the best summer ever!", "Then the healer told me that BOTH my eyes were lazy. And that's why it was the best summer ever!"], _ ;未译
@@ -68,7 +68,7 @@ Local $ConversionTable[1889][2] = [ _
 ["I am Kanaxai, creator of nightmares. Let me make yours into reality.", "I am 加奈赛, creator of nightmares. Let me make yours into reality."], _
 ["Do you like my fish balloon? Can you hear it singing to you...?", "Do you like my fish balloon? Can you hear it singing to you...?"], _ ;未译
 ["You can still view Kamadan trade chat via the main Trade Window", "You can still view Kamadan trade chat via the main Trade Window"], _ ;未译
-["Toolbox normally loads settings on launch.\nClick to re-load from disk now.", "助手通常会在启动时就自动装载设置文件.\n点击以即刻手动重装."], _ ;未译 ;候选词： 缺 ('重装' 欠佳)
+["Toolbox normally loads settings on launch.\nClick to re-load from disk now.", "助手通常会在启动时就自动装载设置文件.\n点击以即刻手动重装."], _ ;候选词： 缺 ('重装' 欠佳)
 ["Show the bonds maintained by you.\nOnly works on human players", "Show the bonds maintained by you.\nOnly works on human players"], _ ;未译
 ["Human sacrifice. Dogs and cats living together. Mass hysteria!", "Human sacrifice. Dogs and cats living together. Mass hysteria!"], _ ;未译
 ["Show messages from your Kamadan ae1 Trade Chat in Trade Window", "Show messages from your Kamadan ae1 Trade Chat in Trade Window"], _ ;未译
@@ -80,7 +80,7 @@ Local $ConversionTable[1889][2] = [ _
 ["The hotkey can only trigger in the selected map (0 = Any map)", "The hotkey can only trigger in the selected map (0 = Any map)"], _ ;未译
 ["ERROR: Failed to parse search results in TradeWindow::fetch\n", "ERROR: Failed to parse search results in TradeWindow::fetch\n"], _ ;未译
 ["And this is where I met the Lich. He told me to burn things.", "And this is where I met the Lich. He told me to burn things."], _ ;未译
-["There are several ways to open and close toolbox windows and widgets:", "There are several ways to open and close 助手窗口及配件:"], _ ;未译
+["There are several ways to open and close toolbox windows and widgets:", "There are several ways to open and close 助手窗口及配件:"], _
 ["TAB or SHIFT+TAB to cycle through keyboard editable fields.", "TAB or SHIFT+TAB to cycle through keyboard editable fields."], _ ;未译
 ["Decrease the value if you have good ping and you die a lot.", "Decrease the value if you have good ping and you die a lot."], _ ;未译
 ["You can create a 'Send Chat' hotkey to perform any command.", "You can create a 'Send Chat' hotkey to perform any command."], _ ;未译
@@ -110,7 +110,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Click to view build. Ctrl + Click to send to chat.", "Click to view build. Ctrl + Click to send to chat."], _ ;未译
 ["Block all other trade messages when in Kamadan ae1", "Block all other trade messages when in Kamadan ae1"], _ ;未译
 ["'/online' Set your friend list status to 'Online'.", "'/online' Set your friend list status to 'Online'."], _ ;未译
-["Toolbox normally saves settings on exit.\nClick to save to disk now.", "助手通常会在关闭时对现有设置自动存档.\n点击以即刻手动存档."], _ ;未译
+["Toolbox normally saves settings on exit.\nClick to save to disk now.", "助手通常会在关闭时对现有设置自动存档.\n点击以即刻手动存档."], _
 ["Chat command '/show <name>' to show a window or widget.", "对话框指令 '/show <相关部件名>': 展开 窗口 或 配件."], _ ;候选词： 显示 (欠佳)
 ["Chat command '/hide <name>' to hide a window or widget.", "对话框指令 '/hide <相关部件名>': 收起 窗口 或 配件."], _ ;候选词： 隐藏 (欠佳)
 ["Execute a single task such as opening chests\nor reapplying lightbringer title", "执行一项操作，例： 开箱\n或重新展示光明头衔"], _
@@ -132,7 +132,7 @@ Local $ConversionTable[1889][2] = [ _
 ["'/wanted' prints current shining blade bounty.", "'/wanted' prints current shining blade bounty."], _ ;未译
 ["'/away' Set your friend list status to 'Away'.", "'/away' Set your friend list status to 'Away'."], _ ;未译
 ["Enabling or disabling pcons will also Tick or Untick in party list", "启动或关闭补品功能之际，助手会改变角色在成员表上的就绪状态"], _
-["Toolbox will disable a pcon if it is not found in the inventory", "如某补品从包内?失寻, 助手会关闭该补品的自动服用功能"], _ ;未译
+["Toolbox will disable a pcon if it is not found in the inventory", "如某补品从包内?失寻, 助手会关闭该补品的自动服用功能"], _
 ["'/nicholas' prints current nicholas location.", "'/nicholas' prints current nicholas location."], _ ;未译
 ["sending purchase request for %d (price=%d)\n", "sending purchase request for %d (price=%d)\n"], _ ;未译
 ["His blood has returned me to my mortal body.", "His blood has returned me to my mortal body."], _ ;未译
@@ -143,7 +143,7 @@ Local $ConversionTable[1889][2] = [ _
 ["As a boy I spent much time in these lands.", "As a boy I spent much time in these lands."], _ ;未译
 ["- Hold SHIFT or use mouse to select text\n", "- Hold SHIFT or use mouse to select text\n"], _ ;未译
 ["Auto Disable on final objective completion", "Auto Disable on final objective completion"], _ ;未译
-["Toggle a GWToolbox++ functionality such as clicker", "Toggle 激战助手++ 功能 such as clicker"], _ ;未译
+["Toggle a GWToolbox++ functionality such as clicker", "Toggle 激战助手++ 功能 such as clicker"], _
 ["The hotkey can trigger only when selected", "The hotkey can trigger only when selected"], _ ;未译
 ["Invalid argument '%ls', please use /pcons [|on|off]", "参数无效 '%ls', 正确格式为： /pcons [|on|off]"], _
 ["Not Connected - Click to re-connect to %s", "Not Connected - Click to re-connect to %s"], _ ;未译
@@ -175,7 +175,7 @@ Local $ConversionTable[1889][2] = [ _
 ["'/weekly' prints current weekly bonus.", "'/weekly' prints current weekly bonus."], _ ;未译
 ["This feature is experimental and might crash your game.\n", "该功能尚在其测试阶段，或会令游戏崩溃.\n"], _
 ["My cat's breath smells like cat food.", "My cat's breath smells like cat food."], _ ;未译
-["Full Conset Price: (Material not available)", "三件套总价: (Material not available)"], _ ;未译
+["Full Conset Price: (Material not available)", "三件套总价: (Material not available)"], _
 ["An alternative to the default compass", "An alternative to the default compass"], _ ;未译
 ["Show messages from %s in Trade Window", "Show messages from %s in Trade Window"], _ ;未译
 ["Friend <name> already added as <name>", "Friend <name> already added as <name>"], _ ;未译
@@ -313,8 +313,8 @@ Local $ConversionTable[1889][2] = [ _
 ["Click to send to team chat", "Click to send to team chat"], _ ;未译
 ["Scroll of Resurrection\nFibers and Bones", "复活卷轴\n植物纤维 及 骨头"], _
 ["DoA - Veil 1: Breaching Stygian Veil", "四门 - 冥狱之幕 1: 突破冥狱之幕"], _
-["Room 8-9 | Failure/Shadows", "第 8-9 间 | Failure/Shadows"], _ ;未译
-["Room 13-14 | Decay/Torment", "第 13-14 间 | Decay/Torment"], _ ;未译
+["Room 8-9 | Failure/Shadows", "第 8-9 间 | Failure/Shadows"], _
+["Room 13-14 | Decay/Torment", "第 13-14 间 | Decay/Torment"], _
 ["Take me now, subcreature.", "Take me now, subcreature."], _ ;未译
 ["My cat's name is Mittens.", "My cat's name is Mittens."], _ ;未译
 ["Load Team Hero Build '%s'", "Load Team Hero Build '%s'"], _ ;未译
@@ -332,17 +332,17 @@ Local $ConversionTable[1889][2] = [ _
 ["Level = %d, tint = %d\n", "Level = %d, tint = %d\n"], _ ;未译
 ["DoA - Foundry 2: Foundry Breakout", "四门 - 铸造厂 2: 逃出铸造厂"], _
 ["Wanted by Shining Blade", "Wanted by Shining Blade"], _ ;未译
-["unwaking waters kurzick", "沉睡之水 (库兹柯)"], _ ;未译
-["sepulchre of dragrimmar", "爪格林玛坟墓"], _ ;未译
+["unwaking waters kurzick", "沉睡之水 (库兹柯)"], _
+["sepulchre of dragrimmar", "爪格林玛坟墓"], _
 ["not idle nor moving, %d", "not idle nor moving, %d"], _ ;未译
 ["No results found for %s", "No results found for %s"], _ ;未译
 ["Nicholas Sandford: 5 %s", "Nicholas Sandford: 5 %s"], _ ;未译
 ["knocked down or missing", "knocked down or missing"], _ ;未译
 ["Invalid bag slot %d/%d!", "Invalid bag slot %d/%d!"], _ ;未译
 ["Failed to parse message", "Failed to parse message"], _ ;未译
-["catacombs of kathandrax", "卡山卓司的地下墓穴"], _ ;未译
+["catacombs of kathandrax", "卡山卓司的地下墓穴"], _
 ["Cancel the current queue of operations", "取消现有或正待命的操作"], _
-["Zone 9 | Blood Drinkers", "第 9 区 | Blood Drinkers"], _ ;未译
+["Zone 9 | Blood Drinkers", "第 9 区 | Blood Drinkers"], _
 ["Get away from my baby!", "Get away from my baby!"], _ ;未译
 ["Armor of Salvation\nIron and Bones", "救赎防具\n铁矿石 及 骨头"], _
 ["Are you the Keymaster?", "Are you the Keymaster?"], _ ;未译
@@ -355,26 +355,26 @@ Local $ConversionTable[1889][2] = [ _
 ["No more %s items found", "No more %s items found"], _ ;未译
 ["Main Window Visibility", "Main Window Visibility"], _ ;未译
 ["kamadan jewel of istan", "kamadan jewel of istan"], _ ;未译
-["fort aspenwood kurzick", "杨木要塞 (库兹柯)"], _ ;未译
+["fort aspenwood kurzick", "杨木要塞 (库兹柯)"], _
 ["e.e. 'You are: Online'", "e.e. 'You are: Online'"], _ ;未译
 ["Available NPC Dialogs:", "Available NPC Dialogs:"], _ ;未译
-["aspenwood gate kurzick", "杨木大门 (库兹柯)"], _ ;未译
+["aspenwood gate kurzick", "杨木大门 (库兹柯)"], _
 ["Agent Enc Name##target", "Agent Enc Name##target"], _ ;未译
 ["%s%s - %s%s###header%d", "%s%s - %s%s###header%d"], _ ;未译
 ["%s [%s]%s%s###header%u", "%s [%s]%s%s###header%u"], _ ;未译
 ["X pos##player", "X 坐标##player"], _ ;候选词： X向/轴 位/方位/定位 横纵
 ["Price Check##resscroll", "估价##resscroll"], _ ;候选词： 验价，鉴价
 ["Move to a specific (x,y) coordinate", "前往既定坐标 (x,y)"], _
-["Kama -> Docks @ Hahnna", "卡玛丹 -> 领事馆码头 @ Hahnna"], _ ;未译
+["Kama -> Docks @ Hahnna", "卡玛丹 -> 领事馆码头 @ Hahnna"], _
 ["DoA - Gloom 3: To The Rescue!", "四门 - 夺心暗域 3: 前往救援!"], _
-["Zone 4 | Bridge Wolves", "第 4 区 | Bridge Wolves"], _ ;未译
+["Zone 4 | Bridge Wolves", "第 4 区 | Bridge Wolves"], _
 ["show_active_in_header", "show_active_in_header"], _ ;未译
 ["While editing text:\n", "While editing text:\n"], _ ;未译
 ["Suppress drunk emotes", "Suppress drunk emotes"], _ ;未译
 ["Couldn't connect to the host '%s'", "无法连接主管站点 '%s'"], _
-["Connected (not resigned)", "Connected (尚未发退出令)"], _ ;未译
+["Connected (not resigned)", "Connected (尚未发退出令)"], _
 ["Wanted: <a=1>%s%s</a>", "Wanted: <a=1>%s%s</a>"], _ ;未译
-["unwaking waters luxon", "沉睡之水 (勒克森)"], _ ;未译
+["unwaking waters luxon", "沉睡之水 (勒克森)"], _
 ["Searching trade for \", "Searching trade for \"], _ ;未译
 ["No friend '%ls' found", "No friend '%ls' found"], _ ;未译
 ["NextedStruct(%lu) {\n", "NextedStruct(%lu) {\n"], _ ;未译
@@ -388,7 +388,7 @@ Local $ConversionTable[1889][2] = [ _
 ["###show_as_explorable", "###show_as_explorable"], _ ;未译
 ["Grail of Might\nIron and Dust", "力量圣杯\n铁矿石 及 闪烁之土"], _
 [" to specify an hexadecimal number", " 指定一16位进制的数字"], _
-["Zone 6 | Energy Drain", "第 6 区 | Energy Drain"], _ ;未译
+["Zone 6 | Energy Drain", "第 6 区 | Energy Drain"], _
 ["Y pos##target", "Y 坐标##target"], _ ;候选词： X向/轴 位/方位/定位
 ["Y pos##player", "Y 坐标##player"], _ ;候选词： X向/轴 位/方位/定位
 ["X pos##target", "X 坐标##target"], _ ;候选词： X向/轴 位/方位/定位
@@ -399,21 +399,21 @@ Local $ConversionTable[1889][2] = [ _
 ["4...Itchy...Tasty...", "4...Itchy...Tasty..."], _ ;未译
 ["- ESCAPE to revert\n", "- ESCAPE to revert\n"], _ ;未译
 ["StoC packet(%lu) {\n", "StoC packet(%lu) {\n"], _ ;未译
-["saint anjekas shrine", "圣者安捷卡的祭坛"], _ ;未译
+["saint anjekas shrine", "圣者安捷卡的祭坛"], _
 ["No more space for %s", "No more space for %s"], _ ;未译
-["minister chos estate", "周大臣庄园_(探索区域)"], _ ;未译
+["minister chos estate", "周大臣庄园_(探索区域)"], _
 ["Maps exported to %ls", "Maps exported to %ls"], _ ;未译
 ["Friend List Commands", "Friend List Commands"], _ ;未译
-["fort aspenwood luxon", "杨木要塞 (勒克森)"], _ ;未译
+["fort aspenwood luxon", "杨木要塞 (勒克森)"], _
 ["Failed to add friend", "Failed to add friend"], _ ;未译
-["Ebon Vanguard Ritual", "黑檀先锋队仪式"], _ ;未译
+["Ebon Vanguard Ritual", "黑檀先锋队仪式"], _
 ["DialogBody content: ", "DialogBody content: "], _ ;未译
-["aspenwood gate luxon", "杨木大门 (勒克森)"], _ ;未译
+["aspenwood gate luxon", "杨木大门 (勒克森)"], _
 ["Price Check##essence", "估价##essence"], _ ;候选词： 验价，鉴价
-["LA Gate -> LA @ Neiro", "狮门 -> 狮子拱门 @ Neiro"], _ ;未译
+["LA Gate -> LA @ Neiro", "狮门 -> 狮子拱门 @ Neiro"], _
 ["Docks -> Kaineng @ Mhenlo", "领事馆码头 -> 凯宁中心 @ 涵洛"], _
 ["Click to send teambuild to chat", "击此以发送整团的技能样本"], _
-["Zone 5 | More Wolves", "第 5 区 | More Wolves"], _ ;未译
+["Zone 5 | More Wolves", "第 5 区 | More Wolves"], _
 ["Show second decimal", "Show second decimal"], _ ;未译
 ["Show 'Start' column", "Show 'Start' column"], _ ;未译
 ["Number of favorites", "Number of favorites"], _ ;未译
@@ -429,7 +429,7 @@ Local $ConversionTable[1889][2] = [ _
 ["great northern wall", "great northern wall"], _ ;未译
 ["Faction Leaderboard", "Faction Leaderboard"], _ ;未译
 ["Competitive Mission", "Competitive Mission"], _ ;未译
-["cathedral of flames", "火焰大教堂"], _ ;未译
+["cathedral of flames", "火焰大教堂"], _
 ["Build Chat Commands", "Build Chat Commands"], _ ;未译
 ["Price Check##pstone", "估价##pstone"], _ ;候选词： 验价，鉴价
 ["Moving to (%.0f, %.0f)", "正在前往坐标 (%.0f, %.0f)"], _
@@ -437,12 +437,12 @@ Local $ConversionTable[1889][2] = [ _
 ["Map ID is unique for each area", "每处皆有一独特的地图号"], _
 ["Docks -> LA Gate @ Mhenlo", "领事馆码头 -> 狮门 @ 涵洛"], _
 ["DoA - Veil 2: Brood Wars", "四门 - 冥狱之幕 2: 一网打尽"], _
-["Zone 7 | Exhaustion", "第 7 区 | Exhaustion"], _ ;未译
-["Zone 2 | Life Drain", "第 2 区 | Life Drain"], _ ;未译
-["Room 12 | Depletion", "第 12 间 | Depletion"], _ ;未译
+["Zone 7 | Exhaustion", "第 7 区 | Exhaustion"], _
+["Zone 2 | Life Drain", "第 2 区 | Life Drain"], _
+["Room 12 | Depletion", "第 12 间 | Depletion"], _
 ["show_run_in_header", "show_run_in_header"], _ ;未译
 ["blocked skill %d\n", "blocked skill %d\n"], _ ;未译
-["WSAStartup Failed.\n", "WSAStartup 失败.\n"], _ ;未译
+["WSAStartup Failed.\n", "WSAStartup 失败.\n"], _
 ["Show 'Time' column", "Show 'Time' column"], _ ;未译
 ["Lunars and Alcohol", "Lunars and Alcohol"], _ ;未译
 ["Load Build on Hero", "Load Build on Hero"], _ ;未译
@@ -455,10 +455,10 @@ Local $ConversionTable[1889][2] = [ _
 ["} endpacket(%lu)\n", "} endpacket(%lu)\n"], _ ;未译
 ["Weekly Bonus (PvP)", "Weekly Bonus (PvP)"], _ ;未译
 ["Weekly Bonus (PvE)", "Weekly Bonus (PvE)"], _ ;未译
-["vloxen excavations", "弗洛森古迹"], _ ;未译
+["vloxen excavations", "弗洛森古迹"], _
 ["Trade Window mode:", "Trade Window mode:"], _ ;未译
 ["Target##cam_target", "Target##cam_target"], _ ;未译
-["jade flats kurzick", "翡翠浅滩 (库兹柯)"], _ ;未译
+["jade flats kurzick", "翡翠浅滩 (库兹柯)"], _
 ["In-Game Trade Chat", "In-Game Trade Chat"], _ ;未译
 ["Guild Info##target", "Guild Info##target"], _ ;未译
 ["friend_list_scroll", "friend_list_scroll"], _ ;未译
@@ -469,22 +469,22 @@ Local $ConversionTable[1889][2] = [ _
 ["Price Check##armor", "估价##armor"], _ ;候选词： 验价，鉴价
 ["Enemy count", "(敌)个数统计"], _ ;候选词： 敌人总数，敌总数，敌数?统计
 ["Disabled###pconstoggle", "已关闭###pconstoggle"], _
-["Room 7 | Depletion", "第 7 间 | Depletion"], _ ;未译
-["Room 3 | Surrender", "第 3 间 | Surrender"], _ ;未译
-["Room 10 | Scorpion", "第 10 间 | Scorpion"], _ ;未译
+["Room 7 | Depletion", "第 7 间 | Depletion"], _
+["Room 3 | Surrender", "第 3 间 | Surrender"], _
+["Room 10 | Scorpion", "第 10 间 | Scorpion"], _
 ["Show 'End' column", "Show 'End' column"], _ ;未译
 ["Select a favorite", "Select a favorite"], _ ;未译
 ["Player ID##player", "Player ID##player"], _ ;未译
 ["Enabled###pconstoggle", "已启动###pconstoggle"], _
 ["vanguard tomorrow", "vanguard tomorrow"], _ ;未译
-["rragars menagerie", "拉喀的牢笼"], _ ;未译
+["rragars menagerie", "拉喀的牢笼"], _
 ["Position##cam_pos", "Position##cam_pos"], _ ;未译
 ["nicholas tomorrow", "nicholas tomorrow"], _ ;未译
 ["jade quarry luxon", "jade quarry luxon"], _ ;未译
-["frostmaws burrows", "冻霜地道"], _ ;未译
-["Enchantment Spell", "加持魔法"], _ ;未译
-["domain of anguish", "悲难领地"], _ ;未译
-["dalessio seaboard", "达雷西海滨"], _ ;未译
+["frostmaws burrows", "冻霜地道"], _
+["Enchantment Spell", "加持魔法"], _
+["domain of anguish", "悲难领地"], _
+["dalessio seaboard", "达雷西海滨"], _
 ["Connected Locally", "Connected Locally"], _ ;未译
 ["Move to (%.0f, %.0f)", "前往坐标 (%.0f, %.0f)"], _
 ["Load build on your character", "为角色装填技能样本"], _
@@ -492,10 +492,10 @@ Local $ConversionTable[1889][2] = [ _
 ["A simple in-game text editor", "一简易的嵌入式便笺"], _
 ["%d foes in compass range", "雷达范围内有 %d 名敌人"], _
 ["%d foes in casting range", "施法范围内有 %d 名敌人"], _
-["Zone 1 | Weakness", "第 1 区 | Weakness"], _ ;未译
-["Room 6 | Lethargy", "第 6 间 | Lethargy"], _ ;未译
-["Room 4 | Exposure", "第 4 间 | Exposure"], _ ;未译
-["Room 1 | Soothing", "第 1 间 | Soothing"], _ ;未译
+["Zone 1 | Weakness", "第 1 区 | Weakness"], _
+["Room 6 | Lethargy", "第 6 间 | Lethargy"], _
+["Room 4 | Exposure", "第 4 间 | Exposure"], _
+["Room 1 | Soothing", "第 1 间 | Soothing"], _
 ["Show Enemy Count", "Show Enemy Count"], _ ;未译
 ["Send chat '%c%s'", "Send chat '%c%s'"], _ ;未译
 ["Open GWToolbox++ Website", "打开 激战助手++ 网站"], _
@@ -518,20 +518,20 @@ Local $ConversionTable[1889][2] = [ _
 ["Pcons loaded: %s", "Pcons loaded: %s"], _ ;未译
 ["Northern Support", "Northern Support"], _ ;未译
 ["mouth of torment", "mouth of torment"], _ ;未译
-["jade flats luxon", "翡翠浅滩 (勒克森)"], _ ;未译
+["jade flats luxon", "翡翠浅滩 (勒克森)"], _
 ["Go to Guild Hall", "Go to Guild Hall"], _ ;未译
-["gadds encampment", "盖德营地"], _ ;未译
-["fishermens haven", "渔人避风港"], _ ;未译
+["gadds encampment", "盖德营地"], _
+["fishermens haven", "渔人避风港"], _
 ["Build loaded: %s", "Build loaded: %s"], _ ;未译
 ["Array32(%lu) {\n", "Array32(%lu) {\n"], _ ;未译
 ["Array16(%lu) {\n", "Array16(%lu) {\n"], _ ;未译
 ["Unwaking Waters (Kurzick)", "沉睡之水 (库兹柯)"], _
 ["Prof Change - Elementalist", "职业更换 - 元素"], _
-["Item #%d not found!", "Item #%d 失寻!"], _ ;未译
+["Item #%d not found!", "Item #%d 失寻!"], _
 ["Invalid dialog number '%s'", "令码无效 '%s'"], _
 ["Buy##resscroll", "买##resscroll"], _ ;候选词： 购买
-["Zone 8 | Pillars", "第 8 区 | Pillars"], _ ;未译
-["Zone 10 | Bridge", "第 10 区 | Bridge"], _ ;未译
+["Zone 8 | Pillars", "第 8 区 | Pillars"], _
+["Zone 10 | Bridge", "第 10 区 | Bridge"], _
 ["The Hidden City of Ahdashim", "隐藏之城，哈达辛"], _
 ["Version %s is available!", "%s 版助手已发行!"], _
 ["Tick with pcons", "Tick with pcons"], _ ;未译
@@ -552,27 +552,27 @@ Local $ConversionTable[1889][2] = [ _
 ["[Pcons][%s %d] ", "[Pcons][%s %d] "], _ ;未译
 ["Zaishen Mission", "Zaishen Mission"], _ ;未译
 ["wanted tomorrow", "wanted tomorrow"], _ ;未译
-["ventaris refuge", "凡特里庇护所"], _ ;未译
+["ventaris refuge", "凡特里庇护所"], _
 ["Vect2(%f, %f)\n", "Vect2(%f, %f)\n"], _ ;未译
 ["The Floodplain of Mahnkelon", "曼克隆泛滥平原"], _
-["seekers passage", "探索者通道"], _ ;未译
-["Off-Hand Attack", "即刻攻击"], _ ;未译
+["seekers passage", "探索者通道"], _
+["Off-Hand Attack", "即刻攻击"], _
 ["NPC ModelFileID", "NPC ModelFileID"], _ ;未译
 ["Log NPC Dialogs", "Log NPC Dialogs"], _ ;未译
 ["Ignored Packets", "Ignored Packets"], _ ;未译
-["heroes audience", "英雄之痕"], _ ;未译
-["hells precipice", "地狱悬崖"], _ ;未译
+["heroes audience", "英雄之痕"], _
+["hells precipice", "地狱悬崖"], _
 ["granite citadel", "granite citadel"], _ ;未译
 ["Gandara, the Moon Fortress", "弦月要塞，干达拉"], _
 ["Faction Support", "Faction Support"], _ ;未译
 ["Export Map Info", "Export Map Info"], _ ;未译
 ["Encoded string:", "Encoded string:"], _ ;未译
 ["Elonian Support", "Elonian Support"], _ ;未译
-["druids overlook", "德鲁伊高地"], _ ;未译
+["druids overlook", "德鲁伊高地"], _
 ["Droajam, Mage of the Sands", "沙之法师 卓加姆"], _
-["darkrime delves", "黑霜洞穴"], _ ;未译
+["darkrime delves", "黑霜洞穴"], _
 ["Characters for ", "Characters for "], _ ;未译
-["bogroot growths", "泥塘根源地"], _ ;未译
+["bogroot growths", "泥塘根源地"], _
 ["barradin estate", "barradin estate"], _ ;未译
 ["Auto load pcons", "Auto load pcons"], _ ;未译
 ["Array8(%lu) {\n", "Array8(%lu) {\n"], _ ;未译
@@ -583,12 +583,12 @@ Local $ConversionTable[1889][2] = [ _
 ["Unwaking Waters (Luxon)", "沉睡之水 (勒克森)"], _
 ["Reapply appropriate Title", "重新展示相关头衔"], _
 ["Burning Forest", "孟席斯的奴隶们"], _ ;候选词： 燃烧森林，
-["Zone 3 | Levers", "第 3 区 | Levers"], _ ;未译
+["Zone 3 | Levers", "第 3 区 | Levers"], _
 ["Murakai, Lady of the Night", "夜之女 幕兰凯"], _
 ["Intricate Grawl Necklaces", "精细的穴居人项链"], _
 ["hotkey-%03d:%s", "hotkey-%03d:%s"], _ ;未译
 ["Toggle###combo", "Toggle###combo"], _ ;未译
-["Show widget toggles", "Show 配件开关"], _ ;未译
+["Show widget toggles", "Show 配件开关"], _
 ["Prof Change - Ritualist", "职业更换 - 祭祀"], _
 ["NameProperties", "NameProperties"], _ ;未译
 ["Menzies", "黑暗的军队"], _ ;或需复原 ;候选词： 孟席斯的奴隶们
@@ -608,27 +608,27 @@ Local $ConversionTable[1889][2] = [ _
 ["Ssuns, Blessed of Dwayna", "薇娜的祝福 桑斯"], _
 ["Show past runs", "Show past runs"], _ ;未译
 ["Show my status", "Show my status"], _ ;未译
-["seafarers rest", "航海者休憩处"], _ ;未译
+["seafarers rest", "航海者休憩处"], _
 ["MessageLocal: ", "MessageLocal: "], _ ;未译
 ["Maximilian the Meticulous", "细心的马希米连"], _
-["marhans grotto", "马翰洞穴"], _ ;未译
-["longeyes ledge", "长眼岩脉"], _ ;未译
+["marhans grotto", "马翰洞穴"], _
+["longeyes ledge", "长眼岩脉"], _
 ["instance_start", "instance_start"], _ ;未译
 ["Harn and Maxine Coldstone", "冰石哈恩/麦辛"], _
 ["Feathered Avicara Scalps", "阿比卡拉头皮羽毛"], _
 ["Factions Elite", "Factions Elite"], _ ;未译
 ["Export to JSON", "Export to JSON"], _ ;未译
 ["Enable Logging", "Enable Logging"], _ ;未译
-["droknars forge", "卓克纳熔炉"], _ ;未译
-["dragons throat", "龙喉"], _ ;未译
+["droknars forge", "卓克纳熔炉"], _
+["dragons throat", "龙喉"], _
 ["Do not disturb", "Do not disturb"], _ ;未译
-["destinys gorge", "命运峡谷"], _ ;未译
+["destinys gorge", "命运峡谷"], _
 ["dailies_scroll", "dailies_scroll"], _ ;未译
-["champions dawn", "勇士曙光"], _ ;未译
-["Binding Ritual", "缚灵仪式"], _ ;未译
+["champions dawn", "勇士曙光"], _
+["Binding Ritual", "缚灵仪式"], _
 ["AgentId(%lu)\n", "AgentId(%lu)\n"], _ ;未译
 ["Advanced##item", "Advanced##item"], _ ;未译
-["abaddons mouth", "地狱隘口"], _ ;未译
+["abaddons mouth", "地狱隘口"], _
 ["###dialoginput", "###dialoginput"], _ ;未译
 ["###dialogcombo", "###dialogcombo"], _ ;未译
 ["timestamp", "timestamp"], _ ;未译 ;候选词： 时戳
@@ -637,11 +637,11 @@ Local $ConversionTable[1889][2] = [ _
 ["Sent dialog %s (%d)", "已发令码 %s (%d)"], _
 ["Prof Change - Assassin", "职业更换 - 暗杀"], _
 ["Margrid The Sly", "狡猾者玛格丽特 (狡诈者玛格丽)"], _
-["General Interface", "General 界面"], _ ;未译
+["General Interface", "General 界面"], _
 ["First item in inventory", "背包左上格内之物"], _
 ["Buy##essence", "买##essence"], _ ;候选词： 购买
-["Room 2 | Death", "第 2 间 | Death"], _ ;未译
-["Room 11 | Fear", "第 11 间 | Fear"], _ ;未译
+["Room 2 | Death", "第 2 间 | Death"], _
+["Room 11 | Fear", "第 11 间 | Fear"], _
 ["Mobrin, Lord of the Marsh", "碎之主 魔兵"], _
 ["Destor the Truth Seeker", "真实追寻者戴斯特"], _
 ["img/materials", "img/materials"], _ ;未译
@@ -660,43 +660,43 @@ Local $ConversionTable[1889][2] = [ _
 ["Clicker is %s", "Clicker is %s"], _ ;未译
 ["Add Teambuild", "Add Teambuild"], _ ;未译
 [" duration: %d", " duration: %d"], _ ;未译
-["urgozs warren", "尔果的养殖场"], _ ;未译
+["urgozs warren", "尔果的养殖场"], _
 ["String(%lu) \", "String(%lu) \"], _ ;未译
 ["Singed Gargoyle Skulls", "烧焦的石像鬼头颅"], _
-["senjis corner", "山吉之街"], _ ;未译
-["Scythe Attack", "镰刀进攻技能"], _ ;未译
-["Ranged Attack", "区域攻击"], _ ;未译
+["senjis corner", "山吉之街"], _
+["Scythe Attack", "镰刀进攻技能"], _
+["Ranged Attack", "区域攻击"], _
 ["Powered by %s", "Powered by %s"], _ ;未译
 ["Packet Logger", "Packet Logger"], _ ;未译
 ["NPC ModelFile", "NPC ModelFile"], _ ;未译
-["Nature Ritual", "自然仪式"], _ ;未译
+["Nature Ritual", "自然仪式"], _
 ["model_file_id", "model_file_id"], _ ;未译
 ["MessageCore: ", "MessageCore: "], _ ;未译
 ["kodash bazaar", "kodash bazaar"], _ ;未译
-["jennurs horde", "征钠群落"], _ ;未译
+["jennurs horde", "征钠群落"], _
 ["in explorable", "in explorable"], _ ;未译
-["heroes ascent", "英雄之路"], _ ;未译
-["Hammer Attack", "锤术攻击技能"], _ ;未译
+["heroes ascent", "英雄之路"], _
+["Hammer Attack", "锤术攻击技能"], _
 ["Game Settings", "Game Settings"], _ ;未译
 ["Forgotten Trinket Boxes", "被遗忘的小箱子"], _
 ["Feathered Caromi Scalps", "卡洛米羽毛头皮"], _
 ["eternal grove", "eternal grove"], _ ;未译
 ["Delete Build?", "Delete Build?"], _ ;未译
-["Dagger Attack", "匕首攻击技能"], _ ;未译
+["Dagger Attack", "匕首攻击技能"], _
 ["Copper Crimson Skull Coins", "红颅铜币"], _
 ["Chat Settings", "Chat Settings"], _ ;未译
 ["cancel action", "cancel action"], _ ;未译
 ["Buffs##player", "Buffs##player"], _ ;未译
 ["Blob(%lu) => ", "Blob(%lu) => "], _ ;未译
 ["Blazefiend Griefblade", "火焰恶魔 悲伤刀片"], _
-["beacons perch", "毕肯高地"], _ ;未译
+["beacons perch", "毕肯高地"], _
 ["Barthimus the Provident", "算计者巴希穆斯"], _
 ["Assault on the Stronghold", "袭击根据地"], _
-["abaddons gate", "亚霸顿之门"], _ ;未译
+["abaddons gate", "亚霸顿之门"], _
 ["##commoncombo", "##commoncombo"], _ ;未译
 ["##alertfilter", "##alertfilter"], _ ;未译
 ["###essenceqty", "###essenceqty"], _ ;未译
-["Show Resign Log", "Show 退出令统计"], _ ;未译
+["Show Resign Log", "Show 退出令统计"], _
 ["Saint Anjeka's Shrine", "圣者安捷卡的祭坛"], _
 ["Prof Change - Ranger", "职业更换 - 游侠"], _
 ["Prof Change - Mesmer", "职业更换 - 幻术"], _
@@ -710,7 +710,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Buy##common", "买##common"], _ ;候选词： 购买
 ["10 Tanned Hide Squares", "10 褐色兽皮"], _
 ["Sapphire Djinn Essence", "蓝宝石巨灵精华"], _
-["Room 5 | Pain", "第 5 间 | Pain"], _ ;未译
+["Room 5 | Pain", "第 5 间 | Pain"], _
 ["Room 15 | Kanaxai", "第 15 间 | 加奈赛"], _
 ["Myish, Lady of the Lake", "湖之女 蜜希"], _
 ["Jarimiya the Unmerciful", "残酷 贾米里"], _
@@ -742,27 +742,27 @@ Local $ConversionTable[1889][2] = [ _
 ["%s_threshold", "%s_threshold"], _ ;未译
 ["%s###build%d", "%s###build%d"], _ ;未译
 ["[Pcons][%s] ", "[Pcons][%s] "], _ ;未译
-["Weapon Spell", "武装魔法"], _ ;未译
+["Weapon Spell", "武装魔法"], _
 ["Triggered %s", "Triggered %s"], _ ;未译
 ["The Elusive Golemancer", "乌啦的实验室"], _
 ["Text spacing", "Text spacing"], _ ;未译
-["Sword Attack", "剑术攻击技能"], _ ;未译
+["Sword Attack", "剑术攻击技能"], _
 ["Superb Charr Carvings", "超级夏尔雕刻品"], _
-["Spear Attack", "矛术进攻技能"], _ ;未译
+["Spear Attack", "矛术进攻技能"], _
 ["shadow nexus", "shadow nexus"], _ ;未译
 ["Sarnia the Red-Handed", "染血之手萨妮亚"], _
 ["removefriend", "removefriend"], _ ;未译
-["ravens point", "渡鸦岬角"], _ ;未译
-["Melee Attack", "近身攻击技能"], _ ;未译
+["ravens point", "渡鸦岬角"], _
+["Melee Attack", "近身攻击技能"], _
 ["Map District", "Map District"], _ ;未译
 ["Korshek the Immolated", "宰杀者 科薛克"], _
 ["is_tb_friend", "is_tb_friend"], _ ;未译
-["gunnars hold", "甘拿的占领地"], _ ;未译
+["gunnars hold", "甘拿的占领地"], _
 ["Greves the Overbearing", "傲慢的葛力斯"], _
 ["Ghial the Bone Dancer", "骨之舞者 葛西"], _
 ["Frostmaw the Kinslayer", "冻击 弑族者"], _
 ["Forest Minotaur Horns", "森林牛头怪的角"], _
-["foibles fair", "佛伊伯市集"], _ ;未译
+["foibles fair", "佛伊伯市集"], _
 ["Elonian Leather Squares", "伊洛那皮革"], _
 ["Elementalist", "Elementalist"], _ ;未译
 ["Dword(%lu)\n", "Dword(%lu)\n"], _ ;未译
@@ -828,9 +828,9 @@ Local $ConversionTable[1889][2] = [ _
 ["zc tomorrow", "zc tomorrow"], _ ;未译
 ["zb tomorrow", "zb tomorrow"], _ ;未译
 ["Word(%lu)\n", "Word(%lu)\n"], _ ;未译
-["vloxs falls", "弗洛克斯瀑布"], _ ;未译
+["vloxs falls", "弗洛克斯瀑布"], _
 ["TPS Regulator Golem", "TPS调节高轮"], _
-["Touch Skill", "碰触技能"], _ ;未译
+["Touch Skill", "碰触技能"], _
 ["The Stygian Underlords", "冥狱地王"], _
 ["Slot (1-25)", "Slot (1-25)"], _ ;未译
 ["skills.json", "skills.json"], _ ;未译
@@ -838,19 +838,19 @@ Local $ConversionTable[1889][2] = [ _
 ["Roaring Ether Claws", "苍穹咆哮者之爪"], _
 ["Quoted Item", "Quoted Item"], _ ;未译
 ["Quansong Spiritspeak", "通灵者 魁嵩"], _
-["Preparation", "准备技能"], _ ;未译
+["Preparation", "准备技能"], _
 ["Plague of Destruction", "疫之破坏者"], _
 ["on %A at %R", "on %A at %R"], _ ;未译
 ["Necromancer", "Necromancer"], _ ;未译
 ["marketplace", "marketplace"], _ ;未译
-["Lead Attack", "引导攻击"], _ ;未译
+["Lead Attack", "引导攻击"], _
 ["Interaction", "Interaction"], _ ;未译
 ["GWToolbox++", "GWToolbox++"], _ ;未译
 ["Friend List", "Friend List"], _ ;未译
 ["Float(%f)\n", "Float(%f)\n"], _ ;未译
 ["First Close", "First Close"], _ ;未译
 ["Finding the Bloodstone", "寻找血石"], _
-["Dual Attack", "双重攻击"], _ ;未译
+["Dual Attack", "双重攻击"], _
 ["description", "description"], _ ;未译
 ["Decayed Orr Emblems", "腐烂的欧尔纹章"], _
 ["Byte(%lu)\n", "Byte(%lu)\n"], _ ;未译
@@ -928,10 +928,10 @@ Local $ConversionTable[1889][2] = [ _
 ["%s_visible", "%s_visible"], _ ;未译
 ["%.0f milliseconds", "%.0f 毫秒"], _
 ["Wilderness of Bahdza", "巴萨荒野"], _
-["Well Spell", "涌泉魔法"], _ ;未译
+["Well Spell", "涌泉魔法"], _
 ["week start", "week start"], _ ;未译
 ["Water Djinn Essence", "水巨灵精华"], _
-["Ward Spell", "结界魔法"], _ ;未译
+["Ward Spell", "结界魔法"], _
 ["War Supply", "War Supply"], _ ;未译
 ["Vess the Disputant", "争论者 薇丝"], _
 ["The Sulfurous Wastes", "硫磺荒地"], _
@@ -944,19 +944,19 @@ Local $ConversionTable[1889][2] = [ _
 ["Royen Beastkeeper", "野兽看守者罗彦"], _
 ["Ring of Fire Islands", "火环列岛"], _
 ["Profession", "Profession"], _ ;未译
-["Pet Attack", "宠物攻击"], _ ;未译
+["Pet Attack", "宠物攻击"], _
 ["Off @ boss", "Off @ boss"], _ ;未译
 ["objectives", "objectives"], _ ;未译
 ["Map Region", "Map Region"], _ ;未译
 ["Mandragor Swamproots", "曼陀罗根"], _
 ["Maguuma Spider Web", "梅古玛蜘蛛丝"], _
-["lions arch", "狮子拱门"], _ ;未译
+["lions arch", "狮子拱门"], _
 ["Last Close", "Last Close"], _ ;未译
 ["kathandrax", "kathandrax"], _ ;未译
 ["Justiciar Thommis", "司法官 汤米兹"], _
 ["Jungle Troll Tusks", "丛林巨魔獠牙"], _
 ["jq kurzick", "jq kurzick"], _ ;未译
-["Item Spell", "抱持魔法"], _ ;未译
+["Item Spell", "抱持魔法"], _
 ["in outpost", "in outpost"], _ ;未译
 ["Grenth's Footprint", "古兰斯的足迹"], _
 ["Green Rock", "Green Rock"], _ ;未译
@@ -967,8 +967,8 @@ Local $ConversionTable[1889][2] = [ _
 ["Extra Luck", "Extra Luck"], _ ;未译
 ["Equip Item", "Equip Item"], _ ;未译
 ["Dreadnought's Drift", "无惧者之丘"], _
-["Bow Attack", "弓术攻击技能"], _ ;未译
-["Axe Attack", "斧术攻击技能"], _ ;未译
+["Bow Attack", "弓术攻击技能"], _
+["Axe Attack", "斧术攻击技能"], _
 ["Ancient Kappa Shells", "古河童壳"], _
 ["A Time for Heroes", "英雄的光采年代"], _
 ["UW - Pools", "地下 - 恐惧蛛化精灵女王"], _
@@ -1048,7 +1048,7 @@ Local $ConversionTable[1889][2] = [ _
 ["10 Plant Fibers", "10 植物纤维"], _
 ["10 Bolts of Cloth", "10 布料"], _
 ["%s_active", "%s_active"], _ ;未译
-["yaks bend", "牦牛村"], _ ;未译
+["yaks bend", "牦牛村"], _
 ["Witman's Folly", "威特曼的怪异建筑"], _
 ["utc_start", "utc_start"], _ ;未译
 ["Turai's Procession", "托雷长廊"], _
@@ -1075,7 +1075,7 @@ Local $ConversionTable[1889][2] = [ _
 ["loadbuild", "loadbuild"], _ ;未译
 ["Last Open", "Last Open"], _ ;未译
 ["Justiciar Amilyn", "判官 亚蜜琳"], _
-["Hex Spell", "降咒魔法"], _ ;未译
+["Hex Spell", "降咒魔法"], _
 ["Gruesome Ribcages", "可怕的胸腔"], _
 ["Gadget ID", "Gadget ID"], _ ;未译
 ["EquipItem", "EquipItem"], _ ;未译
@@ -1102,7 +1102,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Ran Musu Gardens", "岚穆苏花园"], _
 ["Outpost\0\0\0", "城镇\0\0\0"], _
 ["Lump of Charcoal", "结块的木炭"], _
-["Hero Builds", "英雄技能样本"], _ ;未译
+["Hero Builds", "英雄技能样本"], _
 ["Henge of Denravi", "丹拉维圣地"], _
 ["Glob of Ectoplasm", "心灵之玉"], _
 ["Gadd's Encampment", "盖德营地"], _
@@ -1184,7 +1184,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Map Type", "Map Type"], _ ;未译
 ["Leviathan Pits", "利拜亚森矿场"], _
 ["ItemName", "ItemName"], _ ;未译
-["International", "国际区"], _ ;未译
+["International", "国际区"], _
 ["Imperial Sanctum", "帝国圣所"], _
 ["ID: 0x%X", "ID: 0x%X"], _ ;未译
 ["House zu Heltzer", "凤荷议院"], _
@@ -1227,7 +1227,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Red Rock", "Red Rock"], _ ;未译
 ["Phantom Residue", "幻影残留物"], _
 ["Pantheon", "Pantheon"], _ ;未译
-["ooze pit", "乌兹地窖"], _ ;未译
+["ooze pit", "乌兹地窖"], _
 ["nicholas", "nicholas"], _ ;未译
 ["Name Enc", "Name Enc"], _ ;未译
 ["Mossy Mandibles", "生苔下颚骨"], _
@@ -1578,8 +1578,8 @@ Local $ConversionTable[1889][2] = [ _
 ["surmia", "surmia"], _ ;未译
 ["Stone Carving", "石雕品"], _
 ["status", "status"], _ ;未译
-["Stance", "态势"], _ ;未译
-["Signet", "纹章"], _ ;未译
+["Stance", "态势"], _
+["Signet", "纹章"], _
 ["Scroll", "Scroll"], _ ;未译
 ["region", "region"], _ ;未译
 ["Ranger", "Ranger"], _ ;未译
@@ -1644,14 +1644,14 @@ Local $ConversionTable[1889][2] = [ _
 ["Black Pearls", "黑珍珠"], _
 ["Behemoth Jaw", "巨兽颚"], _
 ["Azure Crest", "湛蓝羽冠"], _
-["title", "头衔"], _ ;未译
+["title", "头衔"], _
 ["query", "query"], _ ;未译
 ["plane", "plane"], _ ;未译
 ["pcons", "pcons"], _ ;未译
 ["Waste", "Waste"], _ ;未译
 ["Trade", "Trade"], _ ;未译
 ["Timer", "Timer"], _ ;未译
-["Skill", "技能"], _ ;未译
+["Skill", "技能"], _
 ["Show:", "Show:"], _ ;未译
 ["Ready", "Ready"], _ ;未译
 ["Range", "Range"], _ ;未译
@@ -1675,12 +1675,12 @@ Local $ConversionTable[1889][2] = [ _
 ["Verata", "死灵法师 芙瑞达"], _
 ["Sunqua Vale", "桑泉谷"], _
 ["Stormy Eye", "暴风之眼"], _
-["Spell", "咒文魔法"], _ ;未译
+["Spell", "咒文魔法"], _
 ["Soul Stones", "灵魂石"], _
 ["Skull Juju", "头骨土符"], _
 ["Skelk Claws", "司怪爪"], _
 ["Skale Fins", "鳞怪鳍s"], _
-["Shout", "战嚎"], _ ;未译
+["Shout", "战嚎"], _
 ["Sage Lands", "贤者领地"], _
 ["on %A", "on %A"], _ ;未译
 ["Naga Skins", "迦纳外皮"], _
@@ -1691,13 +1691,13 @@ Local $ConversionTable[1889][2] = [ _
 ["Jotun Pelt", "角顿皮毛"], _
 ["Index", "Index"], _ ;未译
 ["Guild", "Guild"], _ ;未译
-["Glyph", "符号"], _ ;未译
+["Glyph", "符号"], _
 ["Gloom Seed", "黑暗种子"], _
 ["Forgewight", "炼冶维特"], _
 ["flags", "flags"], _ ;未译
 ["Debug", "Debug"], _ ;未译
 ["daily", "daily"], _ ;未译
-["Chant", "圣歌"], _ ;未译
+["Chant", "圣歌"], _
 ["Archipelagos", "群岛"], _
 ["Amber Chunks", "琥珀"], _
 ["alias", "alias"], _ ;未译
@@ -1759,7 +1759,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Arborstone", "亭石"], _
 ["Wiki", "Wiki"], _ ;未译
 ["View", "View"], _ ;未译
-["Trap", "陷阱"], _ ;未译
+["Trap", "陷阱"], _
 ["The Falls", "陷落区"], _
 ["The Breach", "缺口"], _
 ["Slot", "Slot"], _ ;未译
@@ -1771,10 +1771,10 @@ Local $ConversionTable[1889][2] = [ _
 ["Prof", "Prof"], _ ;未译
 ["Monk", "Monk"], _ ;未译
 ["Icy Humps", "冰雪瘤"], _
-["Form", "形态"], _ ;未译
+["Form", "形态"], _
 ["Fendi Nin", "梵蒂宁"], _
 ["fake", "fake"], _ ;未译
-["Echo", "回响"], _ ;未译
+["Echo", "回响"], _
 ["done", "done"], _ ;未译
 ["Date", "Date"], _ ;未译
 ["blue", "blue"], _ ;未译
