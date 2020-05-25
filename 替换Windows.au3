@@ -6,7 +6,7 @@
 #include <File.au3>
 #include <WinAPI.au3>
 ;已被部分翻译，但未完全翻译的字条不算“未译”
-Local $ConversionTable[1890][2] = [ _
+Local $ConversionTable[1892][2] = [ _
 ["Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value", "Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value"], _ ;未译
 ["'/load [build template|build name] [Hero index]' loads a build via Guild Wars builds. The build name must be between quotes if it contains spaces. First Hero index is 1, last is 7. Leave out for player", "'/load [build template|build name] [Hero index]' loads a build via Guild Wars builds. The build name must be between quotes if it contains spaces. First Hero index is 1, last is 7. Leave out for player"], _ ;未译
 ["'/loadbuild [teambuild] <build name|build code>' loads a build via GWToolbox Builds window. Does a partial search on team build name/build name/build code. Matches current player's profession.", "'/loadbuild [teambuild] <build name|build code>' loads a build via GWToolbox Builds window. Does a partial search on team build name/build name/build code. Matches current player's profession."], _ ;未译
@@ -1896,7 +1896,9 @@ Local $ConversionTable[1890][2] = [ _
 ["days", "天"], _
 ["Lab", "迷宫"], _
 ["Take", "领取任务"], _
-["Gwen", "关"] _
+["Gwen", "关"], _
+["Lu8", "L"], _
+["\u8", "\"] _
 ]
 ;记录文件夹及其子夹内的所有.cpp文件名
 Local $fileNames=_FileListToArrayRec(@ScriptDir, "*.cpp", $FLTAR_FILES,  $FLTAR_RECUR)
@@ -1924,10 +1926,10 @@ Func Convert($lData)
 	Local $original = $lData
 	For $i = 0 To Ubound($ConversionTable) - 1
         if $ConversionTable[$i][0] <> $ConversionTable[$i][1] then
-			$lData = StringReplace($lData, "L" & chr(34) & $ConversionTable[$i][0] & chr(34), "L" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
+			;$lData = StringReplace($lData, "L" & chr(34) & $ConversionTable[$i][0] & chr(34), "L" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
 			;for the following, all that needs to be avoided are L and \. Therefore, regex is probably best here because quotes preceded by anything other than L and \ should be switched
 			;as opposed to just quotes preced by space being switched
-			$lData = StringReplace($lData, " " & chr(34) & $ConversionTable[$i][0] & chr(34), " u8" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
+			$lData = StringReplace($lData, chr(34) & $ConversionTable[$i][0] & chr(34), "u8" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
             ;替换过程中，以下指令会罔顾字条两端要有双引号的要求。或该用 stringregexpreplace 并 设定 词界。---> 但是，或需处理搜索词内的括号 <---
 			;---> 词界 \b 被 空格 所替代了 <---
             ;$lData = StringRegExpReplace($lData, "(?)\b" & chr(34) & $ConversionTable[$i][0] & chr(34) & "\b", ' u8' & chr(34) & $ConversionTable[$i][1]  & chr(34) & " ")
