@@ -6,7 +6,7 @@
 #include <File.au3>
 #include <WinAPI.au3>
 ;已被部分翻译，但未完全翻译的字条不算“未译”
-Local $ConversionTable[1889][2] = [ _
+Local $ConversionTable[1890][2] = [ _
 ["Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value", "Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value"], _ ;未译
 ["'/load [build template|build name] [Hero index]' loads a build via Guild Wars builds. The build name must be between quotes if it contains spaces. First Hero index is 1, last is 7. Leave out for player", "'/load [build template|build name] [Hero index]' loads a build via Guild Wars builds. The build name must be between quotes if it contains spaces. First Hero index is 1, last is 7. Leave out for player"], _ ;未译
 ["'/loadbuild [teambuild] <build name|build code>' loads a build via GWToolbox Builds window. Does a partial search on team build name/build name/build code. Matches current player's profession.", "'/loadbuild [teambuild] <build name|build code>' loads a build via GWToolbox Builds window. Does a partial search on team build name/build name/build code. Matches current player's profession."], _ ;未译
@@ -31,7 +31,7 @@ Local $ConversionTable[1889][2] = [ _
 ["I will fill your hearts with visions of horror and despair that will haunt you for all of your days.", "I will fill your hearts with visions of horror and despair that will haunt you for all of your days."], _ ;未译
 ["You are messing with affairs that are beyond your comprehension. Leave now and I may let you live!", "You are messing with affairs that are beyond your comprehension. Leave now and I may let you live!"], _ ;未译
 ["Then the healer told me that BOTH my eyes were lazy. And that's why it was the best summer ever!", "Then the healer told me that BOTH my eyes were lazy. And that's why it was the best summer ever!"], _ ;未译
-["Click on a daily quest to get notified when its coming up. Subscribed quests are highlighted in ", "Click on a daily quest to get notified when its coming up. Subscribed quests are highlighted in "], _ ;未译
+["Click on a daily quest to get notified when its coming up. Subscribed quests are highlighted in ", "点击活动名以触发自动预告；如是受控的活动，其名为 "], _
 ["The hotkey can only trigger when player is the selected primary profession (0 = Any profession)", "The hotkey can only trigger when player is the selected primary profession (0 = Any profession)"], _ ;未译
 ["Displays the distance to your target.\n1010 = Earshot / Aggro\n1248 = Cast range\n2500 = Spirit range\n5000 = Radar range", "展示目标距离.\n1010 = 听距 / 触发圈半径\n1248 = 施法范围\n2500 = 灵距\n5000 = 雷达范围"], _ ;候选词：展现
 ["Keys and lockpicks drop at four times the usual rate and double Lucky and Unlucky title points", "获以往两倍的幸运及不幸运分；钥匙和开锁道具的出产率乘四"], _
@@ -367,6 +367,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Move to a specific (x,y) coordinate", "前往既定坐标 (x,y)"], _
 ["Kama -> Docks @ Hahnna", "卡玛丹 -> 领事馆码头 @ Hahnna"], _
 ["DoA - Gloom 3: To The Rescue!", "四门 - 夺心暗域 3: 前往救援!"], _
+["DoA - Gloom 3: To The Rescue", "四门 - 夺心暗域 3: 前往救援"], _
 ["Zone 4 | Bridge Wolves", "第 4 区 | Bridge Wolves"], _
 ["show_active_in_header", "show_active_in_header"], _ ;未译
 ["While editing text:\n", "While editing text:\n"], _ ;未译
@@ -417,7 +418,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Show second decimal", "Show second decimal"], _ ;未译
 ["Show 'Start' column", "Show 'Start' column"], _ ;未译
 ["Number of favorites", "Number of favorites"], _ ;未译
-["Zaishen Vanquishing", "Zaishen Vanquishing"], _ ;未译
+["Zaishen Vanquishing", "战承清图奖"], _
 ["Vect3(%f, %f, %f)\n", "Vect3(%f, %f, %f)\n"], _ ;未译
 ["Refill from storage", "Refill from storage"], _ ;未译
 ["Player Info##target", "Player Info##target"], _ ;未译
@@ -428,7 +429,7 @@ Local $ConversionTable[1889][2] = [ _
 ["jade quarry kurzick", "jade quarry kurzick"], _ ;未译
 ["great northern wall", "great northern wall"], _ ;未译
 ["Faction Leaderboard", "Faction Leaderboard"], _ ;未译
-["Competitive Mission", "Competitive Mission"], _ ;未译
+["Competitive Mission", "二章竞技奖"], _
 ["cathedral of flames", "火焰大教堂"], _
 ["Build Chat Commands", "Build Chat Commands"], _ ;未译
 ["Price Check##pstone", "估价##pstone"], _ ;候选词： 验价，鉴价
@@ -453,8 +454,8 @@ Local $ConversionTable[1889][2] = [ _
 ["%s [%s]###header%u", "%s [%s]###header%u"], _ ;未译
 ["%s - %s###header%d", "%s - %s###header%d"], _ ;未译
 ["} endpacket(%lu)\n", "} endpacket(%lu)\n"], _ ;未译
-["Weekly Bonus (PvP)", "Weekly Bonus (PvP)"], _ ;未译
-["Weekly Bonus (PvE)", "Weekly Bonus (PvE)"], _ ;未译
+["Weekly Bonus (PvP)", "每周奖励 (竞赛)"], _
+["Weekly Bonus (PvE)", "每周奖励 (游戏)"], _
 ["vloxen excavations", "弗洛森古迹"], _
 ["Trade Window mode:", "Trade Window mode:"], _ ;未译
 ["Target##cam_target", "Target##cam_target"], _ ;未译
@@ -510,13 +511,13 @@ Local $ConversionTable[1889][2] = [ _
 ["Agent ID##player", "Agent ID##player"], _ ;未译
 ["Advanced##target", "Advanced##target"], _ ;未译
 ["%s###herobuild%d", "%s###herobuild%d"], _ ;未译
-["Zaishen Vanquish", "Zaishen Vanquish"], _ ;未译
-["Weekly Bonus PvP", "Weekly Bonus PvP"], _ ;未译
-["Weekly Bonus PvE", "Weekly Bonus PvE"], _ ;未译
+["Zaishen Vanquish", "战承清图"], _
+["Weekly Bonus PvP", "每周奖励 竞赛版"], _
+["Weekly Bonus PvE", "每周奖励 游戏版"], _
 ["Try '/pc <item>'", "Try '/pc <item>'"], _ ;未译
 ["Toolbox Settings", "Toolbox Settings"], _ ;未译
 ["Pcons loaded: %s", "Pcons loaded: %s"], _ ;未译
-["Northern Support", "Northern Support"], _ ;未译
+["Northern Support", "四章支援奖"], _
 ["mouth of torment", "mouth of torment"], _ ;未译
 ["jade flats luxon", "翡翠浅滩 (勒克森)"], _
 ["Go to Guild Hall", "Go to Guild Hall"], _ ;未译
@@ -550,7 +551,7 @@ Local $ConversionTable[1889][2] = [ _
 ["10 Piles of Glittering Dust", "10 闪烁之土"], _
 ["%d foes in spirit range", "灵距内有 %d 名敌人"], _
 ["[Pcons][%s %d] ", "[Pcons][%s %d] "], _ ;未译
-["Zaishen Mission", "Zaishen Mission"], _ ;未译
+["Zaishen Mission", "战承主线奖"], _
 ["wanted tomorrow", "wanted tomorrow"], _ ;未译
 ["ventaris refuge", "凡特里庇护所"], _
 ["Vect2(%f, %f)\n", "Vect2(%f, %f)\n"], _ ;未译
@@ -564,10 +565,10 @@ Local $ConversionTable[1889][2] = [ _
 ["hells precipice", "地狱悬崖"], _
 ["granite citadel", "granite citadel"], _ ;未译
 ["Gandara, the Moon Fortress", "弦月要塞，干达拉"], _
-["Faction Support", "Faction Support"], _ ;未译
+["Faction Support", "二章支援奖"], _
 ["Export Map Info", "Export Map Info"], _ ;未译
 ["Encoded string:", "Encoded string:"], _ ;未译
-["Elonian Support", "Elonian Support"], _ ;未译
+["Elonian Support", "支援伊洛那奖"], _
 ["druids overlook", "德鲁伊高地"], _
 ["Droajam, Mage of the Sands", "沙之法师 卓加姆"], _
 ["darkrime delves", "黑霜洞穴"], _
@@ -576,7 +577,7 @@ Local $ConversionTable[1889][2] = [ _
 ["barradin estate", "barradin estate"], _ ;未译
 ["Auto load pcons", "Auto load pcons"], _ ;未译
 ["Array8(%lu) {\n", "Array8(%lu) {\n"], _ ;未译
-["Alliance Battle", "Alliance Battle"], _ ;未译
+["Alliance Battle", "同盟战奖"], _
 ["###resscrollqty", "###resscrollqty"], _ ;未译
 ["###Mod Struct 1", "###Mod Struct 1"], _ ;未译
 ["Vizunah Square (Foreign)", "薇茹广场 (外地)"], _
@@ -600,7 +601,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Aspenwood Gate (Luxon)", "杨木大门 (勒克森)"], _
 ["Action###combo", "Action###combo"], _ ;未译
 ["Zaishen Combat", "Zaishen Combat"], _ ;未译
-["Zaishen Bounty", "Zaishen Bounty"], _ ;未译
+["Zaishen Bounty", "战承悬赏奖"], _
 ["until %R on %A", "until %R on %A"], _ ;未译
 ["Trade Settings", "Trade Settings"], _ ;未译
 ["The Black Beast of Arrgh", "黑色魔兽 阿尔古"], _
@@ -616,7 +617,7 @@ Local $ConversionTable[1889][2] = [ _
 ["instance_start", "instance_start"], _ ;未译
 ["Harn and Maxine Coldstone", "冰石哈恩/麦辛"], _
 ["Feathered Avicara Scalps", "阿比卡拉头皮羽毛"], _
-["Factions Elite", "Factions Elite"], _ ;未译
+["Factions Elite", "二章精英奖"], _
 ["Export to JSON", "Export to JSON"], _ ;未译
 ["Enable Logging", "Enable Logging"], _ ;未译
 ["droknars forge", "卓克纳熔炉"], _
@@ -745,7 +746,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Weapon Spell", "武装魔法"], _
 ["Triggered %s", "Triggered %s"], _ ;未译
 ["The Elusive Golemancer", "乌啦的实验室"], _
-["Text spacing", "Text spacing"], _ ;未译
+["Text spacing", "字距"], _
 ["Sword Attack", "剑术攻击技能"], _
 ["Superb Charr Carvings", "超级夏尔雕刻品"], _
 ["Spear Attack", "矛术进攻技能"], _
@@ -770,7 +771,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Door Monitor", "Door Monitor"], _ ;未译
 ["Deselect All", "Deselect All"], _ ;未译
 ["deletefriend", "deletefriend"], _ ;未译
-["Daily Quests", "Daily Quests"], _ ;未译
+["Daily Quests", "每日活动"], _
 ["Character(s)", "Character(s)"], _ ;未译
 ["aurios mines", "aurios mines"], _ ;未译
 ["Are you sure", "Are you sure"], _ ;未译
@@ -845,7 +846,7 @@ Local $ConversionTable[1889][2] = [ _
 ["marketplace", "marketplace"], _ ;未译
 ["Lead Attack", "引导攻击"], _
 ["Interaction", "Interaction"], _ ;未译
-["GWToolbox++", "GWToolbox++"], _ ;未译
+["GWToolbox++", "激战助手++"], _
 ["Friend List", "Friend List"], _ ;未译
 ["Float(%f)\n", "Float(%f)\n"], _ ;未译
 ["First Close", "First Close"], _ ;未译
@@ -964,7 +965,7 @@ Local $ConversionTable[1889][2] = [ _
 ["First Open", "First Open"], _ ;未译
 ["First Load", "First Load"], _ ;未译
 ["fa kurzick", "fa kurzick"], _ ;未译
-["Extra Luck", "Extra Luck"], _ ;未译
+["Extra Luck", "份外运气奖"], _
 ["Equip Item", "Equip Item"], _ ;未译
 ["Dreadnought's Drift", "无惧者之丘"], _
 ["Bow Attack", "弓术攻击技能"], _
@@ -1226,7 +1227,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Scoundrel's Rise", "恶汉山丘"], _
 ["Red Rock", "Red Rock"], _ ;未译
 ["Phantom Residue", "幻影残留物"], _
-["Pantheon", "Pantheon"], _ ;未译
+["Pantheon", "神殿奖"], _
 ["ooze pit", "乌兹地窖"], _
 ["nicholas", "nicholas"], _ ;未译
 ["Name Enc", "Name Enc"], _ ;未译
@@ -1653,7 +1654,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Timer", "计时器"], _
 ["Skill", "技能"], _
 ["Show:", "Show:"], _ ;未译
-["Ready", "Ready"], _ ;未译
+["Ready", "就绪"], _
 ["Range", "Range"], _ ;未译
 ["Quest", "Quest"], _ ;未译
 ["Port Sledge", "雪橇港"], _
@@ -1776,9 +1777,9 @@ Local $ConversionTable[1889][2] = [ _
 ["fake", "fake"], _ ;未译
 ["Echo", "回响"], _
 ["done", "done"], _ ;未译
-["Date", "Date"], _ ;未译
-["blue", "blue"], _ ;未译
-["Attr", "Attr"], _ ;未译
+["Date", "日期"], _
+["blue", "蓝色"], _
+["Attr", "属性"], _
 ["Arbor Bay", "安博湾"], _
 [") : ", ") : "], _ ;未译
 ["essence", "敏捷精华"], _
@@ -1845,7 +1846,7 @@ Local $ConversionTable[1889][2] = [ _
 ["minute", "分钟"], _
 ["mapid", "地图号"], _
 ["apple", "糖苹果"], _
-["Reward", "奖励"], _
+["Reward", "领取奖励"], _
 ["Recall", "回归"], _
 ["Pools", "孵化池"], _
 ["Pits", "骷髅墓穴"], _
@@ -1894,7 +1895,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Deep", "深处"], _
 ["days", "天"], _
 ["Lab", "迷宫"], _
-["Take", "接"], _
+["Take", "领取任务"], _
 ["Gwen", "关"] _
 ]
 ;记录文件夹及其子夹内的所有.cpp文件名
@@ -1923,7 +1924,10 @@ Func Convert($lData)
 	Local $original = $lData
 	For $i = 0 To Ubound($ConversionTable) - 1
         if $ConversionTable[$i][0] <> $ConversionTable[$i][1] then
-			$lData = StringReplace($lData, chr(34) & $ConversionTable[$i][0] & chr(34), "u8" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
+			$lData = StringReplace($lData, "L" & chr(34) & $ConversionTable[$i][0] & chr(34), "L" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
+			;for the following, all that needs to be avoided are L and \. Therefore, regex is probably best here because quotes preceded by anything other than L and \ should be switched
+			;as opposed to just quotes preced by space being switched
+			$lData = StringReplace($lData, " " & chr(34) & $ConversionTable[$i][0] & chr(34), " u8" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
             ;替换过程中，以下指令会罔顾字条两端要有双引号的要求。或该用 stringregexpreplace 并 设定 词界。---> 但是，或需处理搜索词内的括号 <---
 			;---> 词界 \b 被 空格 所替代了 <---
             ;$lData = StringRegExpReplace($lData, "(?)\b" & chr(34) & $ConversionTable[$i][0] & chr(34) & "\b", ' u8' & chr(34) & $ConversionTable[$i][1]  & chr(34) & " ")
