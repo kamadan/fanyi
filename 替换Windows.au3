@@ -34,7 +34,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Click on a daily quest to get notified when its coming up. Subscribed quests are highlighted in ", "Click on a daily quest to get notified when its coming up. Subscribed quests are highlighted in "], _ ;未译
 ["The hotkey can only trigger when player is the selected primary profession (0 = Any profession)", "The hotkey can only trigger when player is the selected primary profession (0 = Any profession)"], _ ;未译
 ["Displays the distance to your target.\n1010 = Earshot / Aggro\n1248 = Cast range\n2500 = Spirit range\n5000 = Radar range", "展示目标距离.\n1010 = 听距 / 触发圈半径\n1248 = 施法范围\n2500 = 灵距\n5000 = 雷达范围"], _ ;候选词：展现
-["Keys and lockpicks drop at four times the usual rate and double Lucky and Unlucky title points", "Keys and lockpicks drop at four times the usual rate and double Lucky and Unlucky title points"], _ ;未译
+["Keys and lockpicks drop at four times the usual rate and double Lucky and Unlucky title points", "获以往两倍的幸运及不幸运分；钥匙和开锁道具的出产率乘四"], _
 ["Will actually disable any *change*, so make sure you're not drunk already when enabling this!", "Will actually disable any *change*, so make sure you're not drunk already when enabling this!"], _ ;未译
 ["Such fools to think you can attack me here. Come closer so you can see the face of your doom!", "Such fools to think you can attack me here. Come closer so you can see the face of your doom!"], _ ;未译
 ["Display a number on the bottom of each pcon icon, showing total quantity in storage.\n", "Display a number on the bottom of each pcon icon, showing total quantity in storage.\n"], _ ;未译
@@ -57,11 +57,11 @@ Local $ConversionTable[1889][2] = [ _
 ["Will close the travel window when clicking on a travel destination", "Will close the travel window when clicking on a travel destination"], _ ;未译
 ["We must prepare for the coming of Banjo the Clown, God of Puppets.", "We must prepare for the coming of Banjo the Clown, God of Puppets."], _ ;未译
 ["Even if you banish me from your sight, I will remain in your mind.", "Even if you banish me from your sight, I will remain in your mind."], _ ;未译
-["Double Kurzick and Luxon title track points for exchanging faction", "Double Kurzick and Luxon title track points for exchanging faction"], _ ;未译
+["Double Kurzick and Luxon title track points for exchanging faction", "上交分数时，获以往两倍的库兹柯和勒克森分"], _
 ["'/busy' or '/dnd' Set your friend list status to 'Do Not Disturb'.", "'/busy' or '/dnd' Set your friend list status to 'Do Not Disturb'."], _ ;未译
 ["'/addfriend <character_name>' Add a character to your friend list.", "'/addfriend <character_name>' Add a character to your friend list."], _ ;未译
 ["This will prevent kneel, bored, moan, flex, fistshake and roar.\n", "This will prevent kneel, bored, moan, flex, fistshake and roar.\n"], _ ;未译
-["Double Asura, Deldrimor, Ebon Vanguard, or Norn reputation points", "Double Asura, Deldrimor, Ebon Vanguard, or Norn reputation points"], _ ;未译
+["Double Asura, Deldrimor, Ebon Vanguard, or Norn reputation points", "获以往两倍的阿苏拉, 戴尔狄摩, 黑檀先锋队, 和诺恩分"], _
 ["Automatically load pcons for a build when loaded onto a character", "Automatically load pcons for a build when loaded onto a character"], _ ;未译
 ["Double Balthazar and Imperial faction in the Jade Quarry and Fort Aspenwood", "Double Balthazar and Imperial faction in the 翡翠矿场 and 杨木要塞"], _
 ["Only if your friend's alias is different to their character name", "Only if your friend's alias is different to their character name"], _ ;未译
@@ -88,14 +88,14 @@ Local $ConversionTable[1889][2] = [ _
 ["When I grow up, I want to be a principal or a caterpillar.", "When I grow up, I want to be a principal or a caterpillar."], _ ;未译
 ["Player ID is unique for each human player in the instance.", "Player ID is unique for each human player in the instance."], _ ;未译
 ["Toolbox will disable pcons when leaving an explorable area", "Toolbox will disable pcons when leaving an explorable area"], _ ;未译
-["Double copper Zaishen Coin rewards for Zaishen vanquishes", "Double copper Zaishen Coin rewards for Zaishen vanquishes"], _ ;未译
+["Double copper Zaishen Coin rewards for Zaishen vanquishes", "战承清图任务奖品(铜战承币)翻倍"], _
 ["Double Balthazar faction and Hero title points in Heroes' Ascent", "Double Balthazar faction and Hero title points in 英雄之路"], _
 ["Double Balthazar faction and Champion title points in GvG", "Double Balthazar faction and Champion title points in GvG"], _ ;未译
 ["Display from previous days in the Objective Timer window.", "Display from previous days in the Objective Timer window."], _ ;未译
 ["CTRL+Click or Double Click on a slider or drag box to input text.", "输入字条： 在滑尺上 CTRL+单击 或 双击，或 直接拉动框格."], _ ;候选词： 框格或该成为窗口？栏框
 ["Disable cons when reaching the final room in Urgoz and Deep", "Disable cons when reaching the final room in 尔果 and Deep"], _
-["Double copper Zaishen Coin rewards for Zaishen missions", "Double copper Zaishen Coin rewards for Zaishen missions"], _ ;未译
-["Double copper Zaishen Coin rewards for Zaishen bounties", "Double copper Zaishen Coin rewards for Zaishen bounties"], _ ;未译
+["Double copper Zaishen Coin rewards for Zaishen missions", "战承主线任务奖品(铜战承币)翻倍"], _
+["Double copper Zaishen Coin rewards for Zaishen bounties", "战承悬赏任务奖品(铜战承币)翻倍"], _
 ["Gracious me, was I raving? Please forgive me. I'm mad.", "Gracious me, was I raving? Please forgive me. I'm mad."], _ ;未译
 ["(Each line is a separate keyword. Not case sensitive.)", "(Each line is a separate keyword. Not case sensitive.)"], _ ;未译
 ["'/vanguard' prints current pre-searing vanguard quest.", "'/vanguard' prints current pre-searing vanguard quest."], _ ;未译
@@ -104,7 +104,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Send Chat hotkey to enter one of the commands above.", "Send Chat hotkey to enter one of the commands above."], _ ;未译
 ["<a=1>%s</a> @ %S %d, %02d:%02d: <c=#f96677><quote>%s", "<a=1>%s</a> @ %S %d, %02d:%02d: <c=#f96677><quote>%s"], _ ;未译
 ["'/offline' Set your friend list status to 'Offline'.", "'/offline' Set your friend list status to 'Offline'."], _ ;未译
-["The Deep and Urgoz's Warren can be entered from Kaineng Center", "The Deep and 尔果的养殖场 can be entered from 凯宁中心"], _
+["The Deep and Urgoz's Warren can be entered from Kaineng Center", "可从凯宁城进入深渊和尔果"], _
 ["Show friend aliases when sending/receiving whispers", "Show friend aliases when sending/receiving whispers"], _ ;未译
 ["Most recently quoted item (buy or sell) from trader", "Most recently quoted item (buy or sell) from trader"], _ ;未译
 ["Click to view build. Ctrl + Click to send to chat.", "Click to view build. Ctrl + Click to send to chat."], _ ;未译
@@ -126,7 +126,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Click and drag on the lower right corner to resize a window.", "改变框格大小： 点住框格右下角，再随心拉动."], _ ;候选词： 框格或该成为窗口？
 ["'/tomorrow' prints tomorrow's daily activities.", "'/tomorrow' prints tomorrow's daily activities."], _ ;未译
 ["Not Connected - Click to travel to Kamadan ae1", "Not Connected - Click to travel to Kamadan ae1"], _ ;未译
-["Free passage to the Underworld and the Fissure of Woe", "Free passage to the Underworld and the 灾难裂痕"], _
+["Free passage to the Underworld and the Fissure of Woe", "可免费进入地下世界和灾难裂痕"], _
 ["Enable in an outpost to refill your inventory.", "Enable in an outpost to refill your inventory."], _ ;未译
 ["Disable cons when final objective(s) completed", "Disable cons when final objective(s) completed"], _ ;未译
 ["'/wanted' prints current shining blade bounty.", "'/wanted' prints current shining blade bounty."], _ ;未译
@@ -158,7 +158,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Size of each Pcon icon in the interface", "Size of each Pcon icon in the interface"], _ ;未译
 ["Talk to an NPC to see available dialogs", "Talk to an NPC to see available dialogs"], _ ;未译
 ["No scroll found in inventory for travel", "No scroll found in inventory for travel"], _ ;未译
-["Double Sunspear and Lightbringer points", "Double Sunspear and Lightbringer points"], _ ;未译
+["Double Sunspear and Lightbringer points", "获以往两倍的日戟和光明分"], _
 ["Disable cons when completing a vanquish", "Disable cons when completing a vanquish"], _ ;未译
 ["Enter DoA, FoW, UW, Deep or Urgoz to begin", "Enter DoA, FoW, UW, Deep or 尔果 to begin"], _
 ["[Error] You are already in the outpost", "[Error] You are already in the outpost"], _ ;未译
@@ -764,7 +764,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Forest Minotaur Horns", "森林牛头怪的角"], _
 ["foibles fair", "佛伊伯市集"], _
 ["Elonian Leather Squares", "伊洛那皮革"], _
-["Elementalist", "Elementalist"], _ ;未译
+["Elementalist", "元素"], _
 ["Dword(%lu)\n", "Dword(%lu)\n"], _ ;未译
 ["dragons lair", "dragons lair"], _ ;未译
 ["Door Monitor", "Door Monitor"], _ ;未译
@@ -841,7 +841,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Preparation", "准备技能"], _
 ["Plague of Destruction", "疫之破坏者"], _
 ["on %A at %R", "on %A at %R"], _ ;未译
-["Necromancer", "Necromancer"], _ ;未译
+["Necromancer", "死灵"], _
 ["marketplace", "marketplace"], _ ;未译
 ["Lead Attack", "引导攻击"], _
 ["Interaction", "Interaction"], _ ;未译
@@ -1060,7 +1060,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Sentient Lodestone", "知觉磁石"], _
 ["Searching", "Searching"], _ ;未译
 ["Rolls of Parchment", "羊皮纸卷"], _
-["Ritualist", "Ritualist"], _ ;未译
+["Ritualist", "祭祀"], _
 ["resscroll", "resscroll"], _ ;未译
 ["Rand Stormweaver", "织暴者 硬皮"], _
 ["Pywatt the Swift", "迅捷 派维特"], _
@@ -1267,7 +1267,7 @@ Local $ConversionTable[1889][2] = [ _
 ["campaign", "campaign"], _ ;未译
 ["Berserker Horns", "狂战士的角"], _
 ["Bag/Slot", "Bag/Slot"], _ ;未译
-["Assassin", "Assassin"], _ ;未译
+["Assassin", "暗杀"], _
 ["A Gate Too Far", "一道过远的门"], _
 ["##source", "##source"], _ ;未译
 ["Zin Ku Corridor", "辛库走廊"], _
@@ -1415,7 +1415,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Altrumm Ruins", "奥楚兰废墟"], _
 ["Alcohol", "Alcohol"], _ ;未译
 ["Xaquang Skyway", "夏安便道"], _
-["Warrior", "Warrior"], _ ;未译
+["Warrior", "战士"], _
 ["Vulture Drifts", "秃鹰沙丘"], _
 ["Vizunah Square", "薇茹广场"], _
 ["Varajar Fells", "维拉戛阵地"], _
@@ -1434,7 +1434,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Prismatic Ooze", "多彩乌兹"], _
 ["Pockmark Flats", "麻点平原"], _
 ["pcons%d", "pcons%d"], _ ;未译
-["Paragon", "Paragon"], _ ;未译
+["Paragon", "圣言"], _
 ["Outpost", "Outpost"], _ ;未译
 ["Modniir Manes", "莫得米鬃毛"], _
 ["Minotaur Horns", "牛头怪角"], _
@@ -1452,7 +1452,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Faction", "Faction"], _ ;未译
 ["Ettin's Back", "双头怪隐匿地"], _
 ["Door ID", "Door ID"], _ ;未译
-["Dervish", "Dervish"], _ ;未译
+["Dervish", "神唤"], _
 ["default", "default"], _ ;未译
 ["dailies", "dailies"], _ ;未译
 ["Crystal Desert", "水晶沙漠"], _
@@ -1582,13 +1582,13 @@ Local $ConversionTable[1889][2] = [ _
 ["Signet", "纹章"], _
 ["Scroll", "Scroll"], _ ;未译
 ["region", "region"], _ ;未译
-["Ranger", "Ranger"], _ ;未译
+["Ranger", "游侠"], _
 ["Putrid Cysts", "腐败胞囊"], _
 ["Plague Idols", "瘟疫法器"], _
 ["Old Ascalon", "旧阿斯卡隆"], _
 ["NPC ID", "NPC ID"], _ ;未译
 ["Nebo Terrace", "尼伯山丘"], _
-["Mesmer", "Mesmer"], _ ;未译
+["Mesmer", "幻术"], _
 ["Jahai Bluffs", "夏亥峭壁"], _
 ["Jadeite Shards", "硬玉"], _
 ["Issnur Isles", "伊斯诺岛"], _
@@ -1769,7 +1769,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Rotscale", "恶臭骨龙"], _
 ["Rank", "Rank"], _ ;未译
 ["Prof", "Prof"], _ ;未译
-["Monk", "Monk"], _ ;未译
+["Monk", "僧侣"], _
 ["Icy Humps", "冰雪瘤"], _
 ["Form", "形态"], _
 ["Fendi Nin", "梵蒂宁"], _
