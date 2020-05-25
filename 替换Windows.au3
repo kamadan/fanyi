@@ -1019,7 +1019,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Shing Jea Monastery", "星岬寺"], _
 ["Send Chat", "Send Chat"], _ ;未译
 ["Riverside Province", "河畔地带"], _
-["Price:  -", "Price:  -"], _ ;未译
+["Price:  -", "价:  -"], _
 ["PingBuild", "PingBuild"], _ ;未译
 ["Pcon Size", "Pcon Size"], _ ;未译
 ["Move Down", "Move Down"], _ ;未译
@@ -1368,7 +1368,7 @@ Local $ConversionTable[1889][2] = [ _
 ["UseItem", "UseItem"], _ ;未译
 ["Use #%d", "Use #%d"], _ ;未译
 ["UW - Mnt", "地下 - 恶魔暗杀者"], _
-["Toolbox", "Toolbox"], _ ;未译
+["Toolbox", "激战助手"], _
 ["Senji's Corner", "山吉之街"], _
 ["Ruins of Morah", "摩拉废墟"], _
 ["Roll of Vellum", "牛皮纸卷"], _
@@ -1381,7 +1381,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Monstrous Fang", "巨大尖牙"], _
 ["Monstrous Claw", "巨大的爪"], _
 ["ModelID", "ModelID"], _ ;未译
-["Minimap", "Minimap"], _ ;未译
+["Minimap", "透视雷达"], _
 ["Message", "Message"], _ ;未译
 ["Marketplace, The", "市集"], _
 ["Maguuma Stade", "梅古玛丛林"], _
@@ -1534,13 +1534,13 @@ Local $ConversionTable[1889][2] = [ _
 ["Trade Alerts", "买卖提示"], _
 ["Toggle", "Toggle"], _ ;未译
 ["TeamId", "TeamId"], _ ;未译
-["Target", "Target"], _ ;未译
+["Target", "目标资料"], _
 ["Search", "Search"], _ ;未译
 ["Ring of Fire", "火环群岛"], _
 ["Raisu Palace", "莱苏皇宫"], _
-["Player", "Player"], _ ;未译
+["Player", "角色资料"], _
 ["Piken Square", "派肯广场"], _
-["Map ID", "Map ID"], _ ;未译
+["Map ID", "地图号"], _
 ["Leather Square", "皮革"], _
 ["Khobay", "Khobay"], _ ;未译
 ["ItemId", "ItemId"], _ ;未译
@@ -1553,7 +1553,7 @@ Local $ConversionTable[1889][2] = [ _
 ["Embark", "Embark"], _ ;未译
 ["Elona Reach", "伊洛那流域"], _
 ["Dialog", "Dialog"], _ ;未译
-["Damage", "Damage"], _ ;未译
+["Damage", "功绩"], _
 ["Custom", "Custom"], _ ;未译
 ["Camp Hojanu", "何加努营地"], _
 ["Borlis Pass", "柏里斯通道"], _
@@ -1650,7 +1650,7 @@ Local $ConversionTable[1889][2] = [ _
 ["pcons", "pcons"], _ ;未译
 ["Waste", "Waste"], _ ;未译
 ["Trade", "Trade"], _ ;未译
-["Timer", "Timer"], _ ;未译
+["Timer", "计时器"], _
 ["Skill", "技能"], _
 ["Show:", "Show:"], _ ;未译
 ["Ready", "Ready"], _ ;未译
@@ -1665,10 +1665,10 @@ Local $ConversionTable[1889][2] = [ _
 ["Gloom", "Gloom"], _ ;未译
 ["Fav%d", "Fav%d"], _ ;未译
 ["Explorable", "探索区域"], _
-["Clock", "Clock"], _ ;未译
+["Clock", "钟表"], _
 ["Clear", "Clear"], _ ;未译
 ["Candy Apple", "糖苹果"], _
-["Bonds", "Bonds"], _ ;未译
+["Bonds", "加持"], _
 ["Bolt of Silk", "丝绸"], _
 ["Acolyte Jin", "侍从静"], _
 ["10 Scales", "10 鳞片"], _
@@ -1825,7 +1825,7 @@ Local $ConversionTable[1889][2] = [ _
 ["count", "个数统计"], _
 ["channel", "频道"], _
 ["armor", "救赎防具"], _
-["alcohol", "酒水"], _
+["alcohol", "酒态"], _
 ["Zenmai", "刃玛伊"], _
 ["Xandra", "珊卓亚"], _
 ["Unknown", "不明"], _

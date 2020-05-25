@@ -2142,7 +2142,7 @@ Local $ConversionTable[3347][2] = [ _
 ["Ritualist", "祭祀"], _
 ["Right Alt", "Right Alt"], _ ;未译
 ["Resources", "Resources"], _ ;未译
-["Price:  -", "Price:  -"], _ ;未译
+["Price:  -", "价:  -"], _
 ["PingBuild", "PingBuild"], _ ;未译
 ["Pcon Size", "Pcon Size"], _ ;未译
 ["Page Down", "Page Down"], _ ;未译
@@ -2591,7 +2591,7 @@ Local $ConversionTable[3347][2] = [ _
 ["Use #%d", "Use #%d"], _ ;未译
 ["Updater", "Updater"], _ ;未译
 ["UW - Mnt", "地下 - 恶魔暗杀者"], _
-["Toolbox", "Toolbox"], _ ;未译
+["Toolbox", "激战助手"], _
 ["Timeout", "Timeout"], _ ;未译
 ["Terrain", "Terrain"], _ ;未译
 ["Symbols", "Symbols"], _ ;未译
@@ -2613,7 +2613,7 @@ Local $ConversionTable[3347][2] = [ _
 ["Monstrous Fang", "巨大尖牙"], _
 ["Monstrous Claw", "巨大的爪"], _
 ["ModelID", "ModelID"], _ ;未译
-["Minimap", "Minimap"], _ ;未译
+["Minimap", "透视雷达"], _
 ["Message", "Message"], _ ;未译
 ["Marketplace, The", "市集"], _
 ["Maguuma", "Maguuma"], _ ;未译
@@ -2816,7 +2816,7 @@ Local $ConversionTable[3347][2] = [ _
 ["Trade Alerts", "买卖提示"], _
 ["Toggle", "Toggle"], _ ;未译
 ["TeamId", "TeamId"], _ ;未译
-["Target", "Target"], _ ;未译
+["Target", "目标资料"], _
 ["Square", "Square"], _ ;未译
 ["Shadow", "Shadow"], _ ;未译
 ["Sender", "Sender"], _ ;未译
@@ -2829,14 +2829,14 @@ Local $ConversionTable[3347][2] = [ _
 ["Ranger", "游侠"], _
 ["Raisu Palace", "莱苏皇宫"], _
 ["Polish", "Polish"], _ ;未译
-["Player", "Player"], _ ;未译
+["Player", "角色资料"], _
 ["Piken Square", "派肯广场"], _
 ["Packet", "Packet"], _ ;未译
 ["Others", "Others"], _ ;未译
 ["Oem 10", "Oem 10"], _ ;未译
 ["Noname", "Noname"], _ ;未译
 ["Mesmer", "幻术"], _
-["Map ID", "Map ID"], _ ;未译
+["Map ID", "地图号"], _
 ["Leather Square", "皮革"], _
 ["Kourna", "高楠"], _
 ["Khobay", "Khobay"], _ ;未译
@@ -2854,7 +2854,7 @@ Local $ConversionTable[3347][2] = [ _
 ["Elona Reach", "伊洛那流域"], _
 ["Divide", "Divide"], _ ;未译
 ["Dialog", "Dialog"], _ ;未译
-["Damage", "Damage"], _ ;未译
+["Damage", "功绩"], _
 ["Custom", "Custom"], _ ;未译
 ["Colors", "Colors"], _ ;未译
 ["Color:", "Color:"], _ ;未译
@@ -3003,7 +3003,7 @@ Local $ConversionTable[3347][2] = [ _
 ["Waste", "Waste"], _ ;未译
 ["Vabbi", "瓦贝"], _
 ["Trade", "Trade"], _ ;未译
-["Timer", "Timer"], _ ;未译
+["Timer", "计时器"], _
 ["Time=", "Time="], _ ;未译
 ["Theme", "Theme"], _ ;未译
 ["Space", "Space"], _ ;未译
@@ -3050,11 +3050,11 @@ Local $ConversionTable[3347][2] = [ _
 ["Enter", "Enter"], _ ;未译
 ["Drops", "Drops"], _ ;未译
 ["CrSel", "CrSel"], _ ;未译
-["Color", "Color"], _ ;未译
-["Clock", "Clock"], _ ;未译
+["Color", "颜色"], _
+["Clock", "钟表"], _
 ["Clear", "Clear"], _ ;未译
 ["Candy Apple", "糖苹果"], _
-["Bonds", "Bonds"], _ ;未译
+["Bonds", "加持"], _
 ["Bolt of Silk", "丝绸"], _
 ["Acolyte Jin", "侍从静"], _
 ["10 Scales", "10 鳞片"], _
@@ -3284,7 +3284,7 @@ Local $ConversionTable[3347][2] = [ _
 ["count", "个数统计"], _
 ["channel", "频道"], _
 ["armor", "救赎防具"], _
-["alcohol", "酒水"], _
+["alcohol", "酒态"], _
 ["Zenmai", "刃玛伊"], _
 ["Xandra", "珊卓亚"], _
 ["Unknown", "不明"], _
