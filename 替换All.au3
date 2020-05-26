@@ -6,7 +6,7 @@
 #include <File.au3>
 #include <WinAPI.au3>
 ;已被部分翻译，但未完全翻译的字条不算“未译”
-Local $ConversionTable[3350][2] = [ _
+Local $ConversionTable[3348][2] = [ _
 ["Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value", "Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value"], _ ;未译
 ["Regular expressions allow you to specify wildcards and express more.\nThe syntax is described at www.cplusplus.com/reference/regex/ECMAScript\nNote that the whole message needs to be matched, so for example you might want .* at the end.", "Regular expressions allow you to specify wildcards and express more.\nThe syntax is described at www.cplusplus.com/reference/regex/ECMAScript\nNote that the whole message needs to be matched, so for example you might want .* at the end."], _ ;未译
 ["Salvaging items with lesser salvage kits produce less materials.\nSalvaging items with superior salvage kits can produce rare materials.\n\nCtrl + clicking on a normal Salvage Kit will still allow you to use Salvage All.", "Salvaging items with lesser salvage kits produce less materials.\nSalvaging items with superior salvage kits can produce rare materials.\n\nCtrl + clicking on a normal Salvage Kit will still allow you to use Salvage All."], _ ;未译
@@ -60,8 +60,8 @@ Local $ConversionTable[3350][2] = [ _
 ["Keys and lockpicks drop at four times the usual rate and double Lucky and Unlucky title points", "获以往两倍的幸运及不幸运分；钥匙和开锁道具的出产率乘四"], _
 ["Will actually disable any *change*, so make sure you're not drunk already when enabling this!", "Will actually disable any *change*, so make sure you're not drunk already when enabling this!"], _ ;未译
 ["Such fools to think you can attack me here. Come closer so you can see the face of your doom!", "Such fools to think you can attack me here. Come closer so you can see the face of your doom!"], _ ;未译
-["'/transmotarget <npc_name> [size (6-255)]' to change your target's appearance into an NPC.\n", "'/transmotarget <npc_name> [size (6-255)]' to change your target's appearance into an NPC.\n"], _ ;未译
-["'/transmoparty <npc_name> [size (6-255)]' to change your party's appearance into an NPC.\n", "'/transmoparty <npc_name> [size (6-255)]' to change your party's appearance into an NPC.\n"], _ ;未译
+["'/transmotarget <npc_name> [size (6-255)]' to change your target's appearance into an NPC.\n", "'/transmotarget <游戏人物名> [大小 (6-255)]' 以令目标外观变为该游戏人物的外观.\n"], _ ;未译
+["'/transmoparty <npc_name> [size (6-255)]' to change your party's appearance into an NPC.\n", "'/transmoparty <游戏人物名> [大小 (6-255)]' 以令全团成员的外观变为该游戏人物的外观.\n"], _ ;未译
 ["Sending a whisper to this name will send the message to Twitch.\nCannot contain spaces.", "Sending a whisper to this name will send the message to Twitch.\nCannot contain spaces."], _ ;未译
 ["Only works in an explorable area. Only works on NPCs; not enemies, minions or spirits.", "Only works in an explorable area. Only works on NPCs; not enemies, minions or spirits."], _ ;未译
 ["Display a number on the bottom of each pcon icon, showing total quantity in storage.\n", "Display a number on the bottom of each pcon icon, showing total quantity in storage.\n"], _ ;未译
@@ -2959,7 +2959,7 @@ Local $ConversionTable[3350][2] = [ _
 ["The Jade Sea", "碧玉海"], _
 ["Tangle Root", "纠结之根"], _
 ["Talus Chute", "碎石坡道"], _
-["Spider Legs", "蜘蛛腿s"], _
+["Spider Legs", "蜘蛛腿"], _
 ["Skree Wings", "鸟妖翅膀"], _
 ["Silent Surf", "寂静之浪"], _
 ["Riven Earth", "撕裂大地"], _
@@ -3052,7 +3052,7 @@ Local $ConversionTable[3350][2] = [ _
 ["Drops", "Drops"], _ ;未译
 ["CrSel", "CrSel"], _ ;未译
 ["Color", "颜色"], _
-["Clock", "钟表"], _
+["Clock", "时钟"], _
 ["Clear", "Clear"], _ ;未译
 ["Candy Apple", "糖苹果"], _
 ["Bonds", "加持"], _
@@ -3353,10 +3353,8 @@ Local $ConversionTable[3350][2] = [ _
 ["Deep", "深处"], _
 ["days", "天"], _
 ["Lab", "迷宫"], _
-["Take", "领取任务"], _
-["Gwen", "关"], _
-["Lu8", "L"], _
-["\u8", "\"] _
+["Take", "领取"], _
+["Gwen", "关"] _
 ]
 ;记录文件夹及其子夹内的所有.cpp文件名
 Local $fileNames=_FileListToArrayRec(@ScriptDir, "*.cpp", $FLTAR_FILES,  $FLTAR_RECUR)
@@ -3387,11 +3385,13 @@ Func Convert($lData)
 			;$lData = StringReplace($lData, "L" & chr(34) & $ConversionTable[$i][0] & chr(34), "L" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
 			;for the following, all that needs to be avoided are L and \. Therefore, regex is probably best here because quotes preceded by anything other than L and \ should be switched
 			;as opposed to just quotes preced by space being switched
-			$lData = StringReplace($lData, chr(34) & $ConversionTable[$i][0] & chr(34), "u8" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE
+			$lData = StringReplace($lData, chr(34) & $ConversionTable[$i][0] & chr(34), "u8" & chr(34) & $ConversionTable[$i][1]  & chr(34), 0, $STR_NOCASESENSE)
             ;替换过程中，以下指令会罔顾字条两端要有双引号的要求。或该用 stringregexpreplace 并 设定 词界。---> 但是，或需处理搜索词内的括号 <---
 			;---> 词界 \b 被 空格 所替代了 <---
             ;$lData = StringRegExpReplace($lData, "(?)\b" & chr(34) & $ConversionTable[$i][0] & chr(34) & "\b", ' u8' & chr(34) & $ConversionTable[$i][1]  & chr(34) & " ")
         endif
 	Next
+	$lData = StringReplace($lData, "Lu8", "L", 0, $STR_NOCASESENSE)
+	$lData = StringReplace($lData, "\u8", "\", 0, $STR_NOCASESENSE)
 	return $lData
 EndFunc

@@ -6,14 +6,14 @@
 #include <File.au3>
 #include <WinAPI.au3>
 ;已被部分翻译，但未完全翻译的字条不算“未译”
-Local $ConversionTable[1892][2] = [ _
+Local $ConversionTable[1890][2] = [ _
 ["Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value", "Model ID is unique for each kind of agent.\nIt is static and shared by the same agents.\nWhen targeting players, this is Player ID instead, unique for each player in the instance.\nFor the purpose of targeting hotkeys and commands, use this value"], _ ;未译
 ["'/load [build template|build name] [Hero index]' loads a build via Guild Wars builds. The build name must be between quotes if it contains spaces. First Hero index is 1, last is 7. Leave out for player", "'/load [build template|build name] [Hero index]' loads a build via Guild Wars builds. The build name must be between quotes if it contains spaces. First Hero index is 1, last is 7. Leave out for player"], _ ;未译
 ["'/loadbuild [teambuild] <build name|build code>' loads a build via GWToolbox Builds window. Does a partial search on team build name/build name/build code. Matches current player's profession.", "'/loadbuild [teambuild] <build name|build code>' loads a build via GWToolbox Builds window. Does a partial search on team build name/build name/build code. Matches current player's profession."], _ ;未译
 ["So, you have passed through the depths of the Jade Sea, and into the nightmare realm. It is too bad that I must send you back from whence you came.", "So, you have passed through the depths of the Jade Sea, and into the nightmare realm. It is too bad that I must send you back from whence you came."], _ ;未译
 ["What gives you the right to enter my lair? I shall kill you for your audacity, after I destroy your mind with my horrifying visions, of course.", "What gives you the right to enter my lair? I shall kill you for your audacity, after I destroy your mind with my horrifying visions, of course."], _ ;未译
 ["When you have less than this amount:\n-The number in the interface becomes yellow.\n-Warning message is displayed when zoning into outpost.", "When you have less than this amount:\n-The number in the interface becomes yellow.\n-Warning message is displayed when zoning into outpost."], _ ;未译
-["In the commands above, <name> is the title of the window as shown in the title bar. For example, try '/hide settings' and '/show settings'.", "In the commands above, <name> is the title of the window as shown in the title bar. For example, try '/hide settings' and '/show settings'."], _ ;未译
+["In the commands above, <name> is the title of the window as shown in the title bar. For example, try '/hide settings' and '/show settings'.", "以上指令中，<name> is the title of the window as shown in the title bar. For example, try '/hide settings' and '/show settings'."], _ ;未译
 ["Only trade alerts will be visible in the trade channel.\nYou can still view all Kamadan trade messages via Trade window.", "Only trade alerts will be visible in the trade channel.\nYou can still view all Kamadan trade messages via Trade window."], _ ;未译
 ["Agent ID is unique for each agent in the instance,\nIt's generated on spawn and will change in different instances.", "Agent ID is unique for each agent in the instance,\nIt's generated on spawn and will change in different instances."], _ ;未译
 ["Automatically send a second message after the build template in team chat,\nshowing the pcons that the build uses.", "Automatically send a second message after the build template in team chat,\nshowing the pcons that the build uses."], _ ;未译
@@ -1626,7 +1626,7 @@ Local $ConversionTable[1892][2] = [ _
 ["The Jade Sea", "碧玉海"], _
 ["Tangle Root", "纠结之根"], _
 ["Talus Chute", "碎石坡道"], _
-["Spider Legs", "蜘蛛腿s"], _
+["Spider Legs", "蜘蛛腿"], _
 ["Skree Wings", "鸟妖翅膀"], _
 ["Silent Surf", "寂静之浪"], _
 ["Riven Earth", "撕裂大地"], _
@@ -1666,7 +1666,7 @@ Local $ConversionTable[1892][2] = [ _
 ["Gloom", "Gloom"], _ ;未译
 ["Fav%d", "Fav%d"], _ ;未译
 ["Explorable", "探索区域"], _
-["Clock", "钟表"], _
+["Clock", "时钟"], _
 ["Clear", "Clear"], _ ;未译
 ["Candy Apple", "糖苹果"], _
 ["Bonds", "加持"], _
@@ -1895,10 +1895,8 @@ Local $ConversionTable[1892][2] = [ _
 ["Deep", "深处"], _
 ["days", "天"], _
 ["Lab", "迷宫"], _
-["Take", "领取任务"], _
-["Gwen", "关"], _
-["Lu8", "L"], _
-["\u8", "\"] _
+["Take", "领取"], _
+["Gwen", "关"] _
 ]
 ;记录文件夹及其子夹内的所有.cpp文件名
 Local $fileNames=_FileListToArrayRec(@ScriptDir, "*.cpp", $FLTAR_FILES,  $FLTAR_RECUR)
@@ -1935,5 +1933,7 @@ Func Convert($lData)
             ;$lData = StringRegExpReplace($lData, "(?)\b" & chr(34) & $ConversionTable[$i][0] & chr(34) & "\b", ' u8' & chr(34) & $ConversionTable[$i][1]  & chr(34) & " ")
         endif
 	Next
+	$lData = StringReplace($lData, "Lu8", "L", 0, $STR_NOCASESENSE)
+	$lData = StringReplace($lData, "\u8", "\", 0, $STR_NOCASESENSE)
 	return $lData
 EndFunc
